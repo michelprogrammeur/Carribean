@@ -11,10 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -27,5 +23,19 @@ Route::get('/', function () {
 */
 
 Route::group(['middleware' => ['web']], function () {
-    //
+	Route::get('/', 'FrontController@index');
+    Route::get('contact', 'FrontController@showContact');
+    Route::post('send', 'FrontController@sendContact');
+	Route::any('login', 'LoginController@login'); // get et post
+	Route::get('logout', 'LoginController@logout'); // get et post
+    Route::get('galerie', 'FrontController@galerie');
+    Route::get('livredor', 'FrontController@livredor');
+    Route::get('prestations', 'FrontController@prestations');
+	
+	Route::group(['middleware' => ['auth']], function () {
+		Route::get('dashboard', 'FrontController@dashboard');
+		Route::resource('picture','PictureController');
+		Route::resource('mariage','MariageController');
+	});
 });
+
