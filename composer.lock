@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f6ef953df870c48e46f9339d7d478ec4",
-    "content-hash": "bb05592f1b8c5724a230610b632066bd",
+    "hash": "067e74ca7c14fd5e919cd56e41b25295",
+    "content-hash": "12488572bbcec00b751bfdc6834a31f3",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -1060,6 +1060,43 @@
                 "schedule"
             ],
             "time": "2016-01-26 21:23:30"
+        },
+        {
+            "name": "muhamadrezaar/instagram",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/julles/laravel-instagram.git",
+                "reference": "759b58bd52ebbeabef7ff227f19f5a72234b6ecf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/julles/laravel-instagram/zipball/759b58bd52ebbeabef7ff227f19f5a72234b6ecf",
+                "reference": "759b58bd52ebbeabef7ff227f19f5a72234b6ecf",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Oblagio\\Instagram\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Muhamad Reza Abdul Rohim",
+                    "email": "reza.wikrama3@gmail.com"
+                }
+            ],
+            "description": "Laravel 5 Instagram Package",
+            "keywords": [
+                "instagram",
+                "laravel"
+            ],
+            "time": "2016-03-05 18:09:07"
         },
         {
             "name": "nesbot/carbon",
