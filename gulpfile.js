@@ -1,25 +1,48 @@
-var gulp        = require("gulp");
-var sass        = require("gulp-sass");
-var browserSync = require("browser-sync").create();
-var sourcemaps = require('gulp-sourcemaps');
+var gulp   = require('gulp'),
+	sass   = require('gulp-sass'),
+	minify = require('gulp-minify-css'),
+	concat = require('gulp-concat'),
+	rename = require('gulp-rename'),
+	uglify = require('gulp-uglify');
 
-gulp.task('serve', ['sass'], function(){
-    browserSync.init({
-        server : {
-            proxy : "local.dev"
-        }
-    });
+/*
+ |--------------------------------------------------------------------------
+ | Elixir Asset Management
+ |--------------------------------------------------------------------------
+ |
+ | Elixir provides a clean, fluent API for defining some basic Gulp tasks
+ | for your Laravel application. By default, we are compiling the Sass
+ | file for our application, as well as publishing vendor resources.
+ |
+ */
+var path = {
 
-    gulp.watch('resources/assets/sass/*.scss' , ['sass']);
-    gulp.watch('resources/assets/view/*.php').on('change', browserSync.reload);
+	'resources':{
+		'sass': './resources/assets/sass'
+	},
+	'public': {
+		'css': './public/assets/css'
+	},
+	'sass': './resources/assets/sass/**/*.scss'
+};
+
+// app compilation
+gulp.task('app', function() {
+	return gulp.src(path.resources.sass+'/app.scss')
+		.pipe(sass({
+			onError: console.error.bind(console, 'SASS ERROR')
+		}))
+		.pipe(minify())
+		.pipe(rename({
+			suffix: '.min'
+		}))
+		.pipe(gulp.dest(path.public.css))
 });
 
-gulp.task('sass' , function (){
-  return gulp.src('./resources/assets/sass/main.scss')
-       .pipe(sass())
-       .pipe(gulp.dest('../css'))
-       .pipe(browserSync.reload({stream : true}))
+// watch
+gulp.task('watch', function() {
+	gulp.watch(path.sass, ['app']);
 });
 
+gulp.task('default', ['watch']);
 
-gulp.task('default', ['serve']);
