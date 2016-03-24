@@ -7,13 +7,13 @@
 	{{csrf_field()}}
 
 		<div class="form-group">
-			<label for="namemariage">Nom du mariage ex:(Mr. et Mrs XXXXX)</label>
-			<input type="text" class="form-control" name="namemariage">
+			<label for="name">Nom du mariage ex:(Mr. et Mrs XXXXX)</label>
+			<input type="text" class="form-control" name="name">
 		</div>
 
 		<div class="form-group">
-			<label for="identifiant">Identifiant de connextion pour les mariés</label>
-			<input type="text" class="form-control" name="identifiant" value="">
+			<label for="email">email les mariés</label>
+			<input type="email" class="form-control" name="email" value="">
 		</div>
 
 		<div class="form-group">

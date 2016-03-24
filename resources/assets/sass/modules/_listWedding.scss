@@ -1,0 +1,77 @@
+.pageListeMariagesTitle {
+	color: #6b6b6e;
+	text-transform: uppercase;
+	font-weight: 500;
+	padding: 30px 38px;
+	font-size: 20px;
+}
+.btnCreateMariage {
+	padding: 12px 20px;
+	color: #ffffff;
+	background-color: #337ab7;
+	border-radius: 3px;
+	display: inline-block;
+	margin: 10px 30px 0 38px;
+	transition: 0.3s;
+}
+.btnCreateMariage:hover {
+	text-decoration: none;
+	background-color: #0b5493;
+	color: #ffffff;
+	transition: 0.3s;
+}
+
+.container-cartClient {
+	width: 100%;
+	padding: 10px 20px;
+}
+.cartClient {
+	box-shadow: 0px 1px 3px 0px #b9bbbd;
+	width: 31%;
+	display: inline-block;
+	border-radius: 2px;
+	padding: 0 0 10px 0;
+	background-color: #ffffff;
+	margin: 10px 1% 0 1%;
+	box-sizing: border-box;
+	ul {
+		display: block;
+		width: 100%;
+		li {
+			padding: 5px 0;
+			display: block; 
+		}
+	}
+}
+.cartClient:hover {
+	text-decoration: none;
+}
+.cartClientTitle {
+	border-radius: 2px 2px 0 0;
+	background-color: #ea2b51;
+	color: #ffffff;
+	padding: 20px;
+	display: block;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 0 0 20px 0;
+}
+.cartClientDonneesName {
+	display: block;
+	padding: 5px 20px 20px 20px;
+	font-size: 14px;
+	color: #6b6b6e;
+}
+.cartClientDonneesTitle{
+	font-size: 13px;
+	color: #b5b5b5;
+	padding: 5px 20px;
+}
+
+.cartClientDonnees {
+	padding: 10px 20px 0 20px;
+	line-height: 1.6rem;
+	color: #ea2b51;
+	font-size: 12px;
+}

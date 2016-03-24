@@ -3,7 +3,7 @@
 @section('content')
   <form class="form-horizontal">
 
-    <img src="{{ asset($picture->file) }}" height="150" />
+    <img src="{{ url('uploads', $picture->uri }}" height="150" />
     <div class="form-group">
         <label class=" control-label">Caption</label>
         <div class="">

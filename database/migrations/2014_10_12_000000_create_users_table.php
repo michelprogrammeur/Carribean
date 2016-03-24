@@ -14,11 +14,12 @@ class CreateUsersTable extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('mariage_id')->unsigned()->nullable();
             $table->string('name', 100);
-            $table->string('lastname', 50);
             $table->string('email')->unique();
             $table->string('password', 60);
             $table->enum('status', ['admin', 'maries', 'invites'])->default('invites');
+            $table->foreign('mariage_id')->references('id')->on('mariages')->onDelete('SET NULL');
             $table->rememberToken();
             $table->timestamps();
         });

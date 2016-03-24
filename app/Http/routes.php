@@ -28,14 +28,28 @@ Route::group(['middleware' => ['web']], function () {
     Route::post('send', 'FrontController@sendContact');
 	Route::any('login', 'LoginController@login'); // get et post
 	Route::get('logout', 'LoginController@logout'); // get et post
-    Route::get('galerie', 'FrontController@galerie');
+    Route::get('galerie', 'FrontController@showGalerie');
     Route::get('livredor', 'FrontController@livredor');
+    Route::get('agence', 'FrontController@agence');
     Route::get('prestations', 'FrontController@prestations');
+    Route::get('mentions-legales', 'FrontController@mentionsLegales');
+    Route::get('formules-mariages', 'FrontController@formulesMariages');
+    Route::get('formules-evenements-prives', 'FrontController@formulesEvenementsPrives');
+    Route::get('conciergerie', 'FrontController@conciergerie');
+    
 	
 	Route::group(['middleware' => ['auth']], function () {
-		Route::get('dashboard', 'FrontController@dashboard');
-		Route::resource('picture','PictureController');
+		
 		Route::resource('mariage','MariageController');
+		Route::get('dashboard-maries/{id}', 'ContentMariesController@dashboardMaries');
+
+		Route::group(['middleware' => ['admin']], function () {
+			Route::get('dashboard', 'FrontController@dashboard');
+			Route::resource('picture','PictureController');
+			Route::get('mariageDelete/{id}', 'MariageController@destroy');
+		});
+
 	});
+
 });
 

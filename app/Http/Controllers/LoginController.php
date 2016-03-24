@@ -8,16 +8,15 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use Auth;
+use App\User;
+use App\Mariage;
 
 class LoginController extends Controller
 {
     public function login(Request $request){
 
-    	if(Auth::check()) {
-    		return redirect()->intended('dashboard');
-    	} 
 
-    	//dd($request->all());
+       	//dd($request->all());
 		if($request->isMethod('post')) {
 
 			$this->validate($request, [
@@ -30,12 +29,31 @@ class LoginController extends Controller
 			$credentials = $request->only('email', 'password');
 
 			if(Auth::attempt($credentials, $remember)) {
-				return redirect('dashboard')->with([
-		    		'message' => "vous etes bien connecté !",
-		    	]);
-			}else {
+				$user = $request->user();
+				if($user->status === 'admin') {
+					return redirect('dashboard')->with([
+		    			'message' => "Vous êtes bien connecté en tant qu'admin !",
+		    		]);
+		
+				}
+				elseif ($user->status === 'maries' ) {
+					$userId = $user->mariage_id;
+
+					return redirect()->route('mariage.show', [$userId])->with([
+		    			'message' => "Vous êtes bien connecté en tant qu'admin !",
+		    		]);
+				}
+				else{
+					Auth::logout();
+
+					return redirect('/')->with(['message', 'Vous n\'êtes pas autorisé à rentrer !']);
+				}
+
+			}
+
+			else {
 				return back()->withInput($request->only('email', 'remember'))->with([
-					'message'=> "Votre mot de passe ou votre login est incorrect !",
+					'message'=> "Votre login ou votre mot de passe est incorrect !",
 				]);
 			}
 

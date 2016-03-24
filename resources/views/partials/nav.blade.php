@@ -2,18 +2,14 @@
 
 <ul class="navbar">
 
-@if(Auth::check())
-	<li><a href="{{url('accueil')}}">Acceuil</a></li>
-@else 
-	
-@endif
+	<li><a href="{{url('/')}}">Accueil</a></li>
 	<li><a href="{{url('agence')}}">L'agence</a></li>
 	<li>
 		<a href="{{url('prestations')}}">Prestations</a>
 		<ul>
-			<li><a href="{{url('livredor')}}">Mariage</a></li>
-			<li><a href="{{url('livredor')}}">Evenements privés</a></li>
-			<li><a href="{{url('livredor')}}">Conciergerie</a></li>
+			<li><a href="{{url('')}}">Mariage</a></li>
+			<li><a href="{{url('formules-evenements-prives')}}">Evenements privés</a></li>
+			<li><a href="{{url('conciergerie')}}">Conciergerie</a></li>
 		</ul>
 	</li>
 	<li><a href="{{url('galerie')}}">Galerie</a></li>
@@ -28,10 +24,14 @@
 
 @if(Auth::check())
 	<li><a href="{{url('dashboard')}}">Dashboard</a></li>
+
 	<li><a href="{{url('logout')}}">Déconnexion</a></li>
 @else 
 	
 @endif
 
 </ul>
+
+<a href="{{url('login')}}">Mon evenement</a>
+
 

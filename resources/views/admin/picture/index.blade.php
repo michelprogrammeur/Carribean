@@ -1,13 +1,9 @@
 @extends('layouts.admin')
 
-@if(Session::has('message'))
-	<span class="warming {{Session::get('alert')}}"> {{Session::get('message')}}</span>
-@endif
-
 @section('content')
 	<p>Page CRUD gallerie images</p>
 
-
+	<div class="row">
 	@if(count($pictures) > 0)
 	     <div class="col-md-12 text-center" >
 	        <a href="{{ url('/picture/create') }}" class="btn btn-primary" role="button">
@@ -18,7 +14,7 @@
 	     </div>
 	@endif
 	@forelse($pictures as $picture)
-	     <div>
+	    <div class="col-md-2">
 	        <div class="thumbnail">
 	           <img src="{{asset($picture->file)}}" />
 	           <div class="caption">

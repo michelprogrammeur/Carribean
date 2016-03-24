@@ -13,6 +13,7 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name', 
+        'mariage_id',
         'email', 
         'password',
         'status',
@@ -33,5 +34,13 @@ class User extends Authenticatable
 
     public function mariage() {
         return $this->belongsTo('App\Mariage');
+    }
+
+    public function isSuperAdmin()
+    {
+        if (!empty($this->status))
+            return $this->status == 'admin';
+
+        return false;
     }
 }

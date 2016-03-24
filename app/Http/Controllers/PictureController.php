@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Storage;
+use File;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
@@ -10,14 +10,14 @@ use Illuminate\Http\Request;
 use App\Picture;
 use Validator;
 
-
 class PictureController extends Controller
 {
     public function index() {
-    	$pictures = Picture::paginate(10);
+    	$pictures = Picture::paginate(12);
 
-        return view('admin.picture.index')->with('pictures', $pictures);
+        return view('admin.picture.index', compact('pictures'));
     }
+
 
 	/* 2. This method relates to the "add new picture" view */
 	public function create() {
@@ -95,7 +95,8 @@ class PictureController extends Controller
 			$file = $request->file('userfile');
 			$destination_path = 'uploads/';
 			$filename = str_random(6).'_'.$file->getClientOriginalName();
-			$file->move($destination_path, $filename);
+
+            $file->move($destination_path, $filename);
 			$picture->file = $destination_path . $filename;
 		}
 
@@ -106,11 +107,13 @@ class PictureController extends Controller
 		return redirect('/picture')->with('message','You just updated an picture!');
 	}
 
-	public function destroy($id) {
-		$picture = Picture::find($id);
-		/*if ($picture) {
-            Storage::delete('uploads/'.$picture->uri); // file
-        }*/
+	public function destroy(Picture $picture) {
+        
+        $file = $picture->file;
+        if(File::exists($file)) {
+            File::delete($picture->file);
+        }
+
 		$picture->delete();
 
 		return redirect('/picture')->with('message','You just uploaded an picture!');

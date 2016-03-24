@@ -14,7 +14,7 @@ class Mariage extends Model
         'published_at',
     ];
 
-    public function user() {
+    public function users() {
     	return $this->hasMany('App\User');
     }
 }
