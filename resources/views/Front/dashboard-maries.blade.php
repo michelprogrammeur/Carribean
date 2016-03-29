@@ -1,32 +1,12 @@
 @extends('layouts.master')
 
 @section('content')
+	<h1 class="pageListeMariagesTitle">Liste des mariages actuels<h1>
+	<a class="btnCreateMariage" href="{{ url('dashboard-maries/create', $mariage->id) }}" role="button">Creater votre contenu</a>
 
-	<form class="" enctype="multipart/form-data" action="{{url('/mariage', $mariage->id)}}" method="POST">
-	{{csrf_field()}}
-
-	<div class="form-group">
-		<label for="title">title</label>
-		<input type="text" class="form-control" name="title">
+	<a class="btnCreateMariage" href="{{ url('article-maries/create', $mariage->id) }}" role="button">Creation Article</a>
+	
+	<div class="container-cartClient">
+	
 	</div>
-
-	<div class="form-group">
-		<label for="mariageDate">Date du mariage</label>
-		<input type="text" class="form-control" name="mariageDate" value="">
-	</div>
-
-	<div class="form-group">
-		<label for="lieu">Lieu du mariage</label>
-		<input type="text" class="form-control" name="lieu" value="">
-	</div>
-
-	<div class="form-group">
-		<label for="contenu">contenu</label>
-		<textarea class="form-control" name="contenu" value=""></textarea>
-	</div>
-
-
-	<button type="submit" class="btn btn-primary">creater</button>
-	<a href="{{ url('/mariage', $mariage->id) }}" class="btn btn-warning">Cancel</a>
-    </form>
 @stop

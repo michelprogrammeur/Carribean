@@ -7,6 +7,8 @@
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="{{url('assets\bootstrap\css\bootstrap.min.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{url('assets/css/app.min.css')}}">
+	<link type="text/css" rel="stylesheet" href="{{url('assets/css/lightGallery.css')}}">
+	
 </head>
 
 <body>
@@ -28,6 +30,8 @@
 	<footer>
 	</footer>
 
-	@yield('scripts')	
+	@yield('scripts')
+	<script src="{{url('assets/js/jquery.min.js')}}"></script>
+	<script src="{{url('assets/js/lightGallery.min.js')}}"></script>
 </body>
 </html>

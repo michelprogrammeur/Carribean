@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
 use App\Http\Requests;
 
 use App\User;
@@ -23,38 +22,48 @@ class ContentMariesController extends Controller
         
     }
 
-    public function create() {
-    	if($request->isMethod('post')) {
+    public function create($id) {
+    	$users = User::all();
+        $mariage = Mariage::find($id);
 
+        return view('maries.pagecontent.add-new-content', compact('mariage', 'users'));
+    }
+
+    public function update(Request $request, $id) {
+    	$mariage = Mariage::find($id);
+    	
+    	//dd($mariage);
+
+		if($request->isMethod('post')) {
 	        $validation = Validator::make($request->all(), [
-				'title'     => 'required|string',
-				'mariageDate' => 'required|date',
-				'lieu' => 'required|string',
-				'content' => 'required|text',
+				'title'       => 'required|string',
+				'mariageDate' => 'required|string',
+				'lieu'        => 'required|text',
+				'content'     => 'required|text',
 	        ]);
 
+	        
 	        // Check if it fails //
-	       /* if( $validation->fails() ){
+	        /*if( $validation->fails() ){
 	            return redirect()->back()->withInput()
 	                             ->with('errors', $validation->errors() );
 	        }*/
 
 	        // Process valid data & go to success page //
-	        $title = $request->input('title');
+	       	$title = $request->input('title');
 	        $mariageDate = $request->input('mariageDate');
 	        $lieu = $request->input('lieu');
-	        $content = $request->textarea('text');
+	        $content = $request->input('contenu');
 
-	        $mariage = Mariage::create([
-				'title'     => $title,
-				'date'      => $mariageDate,
-				'lieu' 		=> $lieu,
-				'content'   => $content,
+	        $mariage->update([
+				'title'       => $title,
+				'datemariage' => $mariageDate,
+				'lieu'        => $lieu,
+				'content'     => $content,
 	        ]);
 
-	        $mariage->save();
-
-	        return redirect('/mariage')->with('message','La page mariage de '.$name);
+	        
+    		return redirect()->intended('mariage/'.$mariage->id)->with('message', 'coucou');    
     	}
     }
 }

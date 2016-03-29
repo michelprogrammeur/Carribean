@@ -14,10 +14,12 @@ class CreatePicturesTable extends Migration
     {
         Schema::create('pictures', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('category_id')->unsigned()->nullable();
             $table->string('file');
             $table->string('uri');
             $table->string('caption');
             $table->enum('status', ['published', 'unpublished'])->default('unpublished');
+            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
             $table->dateTime('published_at');
             $table->timestamps();
         });

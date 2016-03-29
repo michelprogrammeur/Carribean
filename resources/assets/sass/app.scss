@@ -1,7 +1,112 @@
 
+/* typo menu */
+@font-face {
+    font-family: 'ProximaNovaRegular';
+    src: url('../fonts/ProximaNovaRegular.eot');
+    src: url('../fonts/ProximaNovaRegular.eot') format('embedded-opentype'),
+         url('../fonts/ProximaNovaRegular.woff2') format('woff2'),
+         url('../fonts/ProximaNovaRegular.woff') format('woff'),
+         url('../fonts/ProximaNovaRegular.ttf') format('truetype'),
+         url('../fonts/ProximaNovaRegular.svg#ProximaNovaRegular') format('svg');
+}
+/* typo accroche*/
+@font-face {
+    font-family: 'Demo_ConeriaScript';
+    src: url('../fonts/Demo_ConeriaScript.eot');
+    src: url('../fonts/Demo_ConeriaScript.eot') format('embedded-opentype'),
+         url('../fonts/Demo_ConeriaScript.woff2') format('woff2'),
+         url('../fonts/Demo_ConeriaScript.woff') format('woff'),
+         url('../fonts/Demo_ConeriaScript.ttf') format('truetype'),
+         url('../fonts/Demo_ConeriaScript.svg#Demo_ConeriaScript') format('svg');
+}
+
+@font-face {
+    font-family: 'ProximaNovaCondLight';
+    src: url('../fonts/ProximaNovaCondLight.eot');
+    src: url('../fonts/ProximaNovaCondLight.eot') format('embedded-opentype'),
+         url('../fonts/ProximaNovaCondLight.woff2') format('woff2'),
+         url('../fonts/ProximaNovaCondLight.woff') format('woff'),
+         url('../fonts/ProximaNovaCondLight.ttf') format('truetype'),
+         url('../fonts/ProximaNovaCondLight.svg#ProximaNovaCondLight') format('svg');
+}
+
+@font-face {
+    font-family: 'ProximaNovaLight';
+    src: url('../fonts/ProximaNovaLight.eot');
+    src: url('../fonts/ProximaNovaLight.eot') format('embedded-opentype'),
+         url('../fonts/ProximaNovaLight.woff2') format('woff2'),
+         url('../fonts/ProximaNovaLight.woff') format('woff'),
+         url('../fonts/ProximaNovaLight.ttf') format('truetype'),
+         url('../fonts/ProximaNovaLight.svg#ProximaNovaLight') format('svg');
+}
+
+@font-face {
+    font-family: 'CinzelRegular_0';
+    src: url('../fonts/CinzelRegular_0.eot');
+    src: url('../fonts/CinzelRegular_0.eot') format('embedded-opentype'),
+         url('../fonts/CinzelRegular_0.woff2') format('woff2'),
+         url('../fonts/CinzelRegular_0.woff') format('woff'),
+         url('../fonts/CinzelRegular_0.ttf') format('truetype'),
+         url('../fonts/CinzelRegular_0.svg#CinzelRegular_0') format('svg');
+}
+
+/* font pour les nombres */
+@font-face {
+    font-family: 'K22Didoni';
+    src: url('../fonts/K22Didoni.eot');
+    src: url('../fonts/K22Didoni.eot') format('embedded-opentype'),
+         url('../fonts/K22Didoni.woff2') format('woff2'),
+         url('../fonts/K22Didoni.woff') format('woff'),
+         url('../fonts/K22Didoni.ttf') format('truetype'),
+         url('../fonts/K22Didoni.svg#K22Didoni') format('svg');
+}
+
+@font-face {
+    font-family: 'ProximaNovaSemibold';
+    src: url('../fonts/ProximaNovaSemibold.eot');
+    src: url('../fonts/ProximaNovaSemibold.eot') format('embedded-opentype'),
+         url('../fonts/ProximaNovaSemibold.woff2') format('woff2'),
+         url('../fonts/ProximaNovaSemibold.woff') format('woff'),
+         url('../fonts/ProximaNovaSemibold.ttf') format('truetype'),
+         url('../fonts/ProximaNovaSemibold.svg#ProximaNovaSemibold') format('svg');
+}
+/* font signature avis*/
+@font-face {
+    font-family: 'Insolente';
+    src: url('../fonts/Insolente.eot');
+    src: url('../fonts/Insolente.eot') format('embedded-opentype'),
+         url('../fonts/Insolente.woff2') format('woff2'),
+         url('../fonts/Insolente.woff') format('woff'),
+         url('../fonts/Insolente.ttf') format('truetype'),
+         url('../fonts/Insolente.svg#Insolente') format('svg');
+}
+
+
+
+
+
+html {
+	font-size: 62.5%; /* 10px / 16px */
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+
+
 @import "modules/reset.scss";
+
+@import "modules/accueil.scss";
 @import "modules/nav.scss";
+@import "modules/footer.scss";
+
+@import "modules/mariage.scss";
+
 @import "modules/gallery.scss";
+@import "modules/livredor.scss";
+@import "modules/contact.scss";
 @import "modules/dashboard.scss";
 @import "modules/login-admin.scss";
+@import "modules/dashboardMariesContent.scss";
 @import "modules/listWedding.scss";
+

@@ -8,6 +8,16 @@
 	{{csrf_field()}}
 
       <div class="form-group">
+         <label>Categories</label>
+         <select name="category_id">
+            <option value="0">Non catégorisé</option>
+            @foreach($categories as $id => $title)
+               <option value="{{$id}}">{{ $title }}</option>
+            @endforeach
+         </select>
+      </div>
+
+      <div class="form-group">
          <label for="userfile">picture File</label>
          <input type="file" class="form-control" name="userfile">
       </div>

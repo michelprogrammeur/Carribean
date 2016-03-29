@@ -1,0 +1,56 @@
+.contact {
+	width: 100%;
+	padding: 0 50px 50px 50px;
+	box-sizing: border-box;
+	background: url('../images/motif.png') repeat 0 0;
+}
+.contact-container  {
+	padding: 100px;
+	width: 100%;
+	box-sizing: border-box;
+	background-color: #ffffff;
+	ul {
+		width: 100%;
+		li div{
+			font-size: 24px;
+			color: #c92f51;
+			font-family: 'ProximaNovaRegular',verdana, arial, sans-serif;
+			padding: 16px 30px;
+			background-color: rgba(255,255,255,0.6);
+			border: 2px solid #ffffff;
+			h2 {
+				padding: 0 0 10px 0;
+			}
+		}
+		.agence-paris {
+			position: relative;
+			background: url('../images/plage.jpg') repeat 0 0;
+			height: 400px;
+			text-align: center;
+			margin-right: 2%;
+			display: inline-block;
+			width: 48%;
+			.agence-container--paris {
+				left: 50%;
+				top: 50%;
+				position: absolute;
+				transform: translateX(-50%) translateY(-50%);
+			}
+		}
+		.agence-guadeloupe {
+			position: relative;
+			background: url('../images/plage.jpg') repeat 0 0;
+			text-align: center;
+			margin-left: 1%;
+			display: inline-block;
+			width: 49%;
+			height: 400px;
+			.agence-container--guadeloupe {
+				left: 50%;
+				top: 50%;
+				position: absolute;
+				transform: translateX(-50%) translateY(-50%);
+			}
+		}
+	}
+}

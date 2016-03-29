@@ -1,0 +1,54 @@
+/* FOOTER CSS */
+#footer {
+	width: 100%;
+	background-color: #e9eefb;
+	.footer-left, .footer-middle, .footer-right {
+		display: inline-block;
+		width: 33.3333%;
+		box-sizing: border-box;
+		vertical-align: top;
+	}
+	.footer-middle {
+		text-align: center;
+	}
+	.footer-left {
+		p, a {
+			
+			font-size: 10px;
+			display: inline-block;
+			color: #6b6b6e;
+			font-family: 'ProximaNovaRegular',verdana, arial, sans-serif;
+		}
+		.copyright {
+			padding: 30px 20px 30px 58px;
+		}
+		.mentions-legales {
+			padding: 30px 20px;
+			text-decoration: underline;
+		}
+	}
+	.footer-right {
+		text-align: right;
+		div {
+		 	width: 34%;
+		 	display: inline-block;
+		 	vertical-align: top;
+		}
+		.reseaux-sociaux {
+			width: 66%;
+			padding: 17px 0 0 0;
+			ul {
+				width: 100%;
+				li {
+					display: inline-block;
+					padding: 10px 9px;
+				}
+			}
+		}
+		.partenaires {
+			box-sizing: border-box;
+			padding: 23px 58px 0 0;
+			width: 34%;
+		}
+	}
+}

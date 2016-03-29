@@ -19,15 +19,13 @@
 			    		<p class="cartClientDonneesTitle">Mot de passe:</p>
 			    		<span class="cartClientDonnees">{{ $user->password }}</span>
 			    	</li>
-			    	<li>
-			    		<a href="{{url('mariageDelete', $mariage->id)}}">Delete</a>
-			    	</li>
 				@empty
 					<p>no tags</p>
 				@endforelse
 
 			</ul>
 		</a>
+		<a href="{{url('mariageDelete', $mariage->id)}}">Delete</a>
 	@empty
 	     <p>Pas encore de mariage</p>
 	@endforelse

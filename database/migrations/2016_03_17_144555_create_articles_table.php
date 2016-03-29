@@ -14,12 +14,12 @@ class CreateArticlesTable extends Migration
     {
         Schema::create('articles', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('mariages_id')->unsigned()->nullable();
+            $table->integer('mariage_id')->unsigned()->nullable();
             $table->string('title', 100);
             $table->text('content');
             $table->enum('status', ['published', 'unpublished'])->default('unpublished');
             $table->dateTime('published_at');
-            $table->foreign('mariages_id')->references('id')->on('mariages')->onDelete('SET NULL');
+            $table->foreign('mariage_id')->references('id')->on('mariages')->onDelete('SET NULL');
             $table->timestamps();
         });
     }

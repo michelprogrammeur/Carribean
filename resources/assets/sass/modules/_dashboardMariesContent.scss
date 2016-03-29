@@ -1,0 +1,69 @@
+.loginTitle {
+	color: #6b6b6e;
+	text-transform: uppercase;
+	font-weight: 500;
+	padding: 0 0 30px 0;
+	font-size: 20px;
+}
+
+.container-loginChamps {
+	width: 100%;
+}
+.labelContentChamps {
+	color: #6b6b6e;
+	width: 100%;
+	display: block;
+	font-weight: 400;
+	font-size: 17px;
+	padding: 22px 0 10px 0;
+}
+.inputContentChamps {
+	border-radius: 3px;
+	width: 100%;
+	padding: 10px;
+	font-size: 14px;
+	box-sizing: border-box;
+	border: 2px solid #eaeffe;
+	color: #cb1438;
+}
+
+.formulaireMariesContenu {
+	font-family: verdana, arial, sans-serif;
+	position: relative;
+	margin: 20px auto;
+	width: 500px;
+	background-color: #ffffff;
+	box-shadow: 0px 1px 3px 0px #b9bbbd;
+	padding: 20px;
+	.textareaContent {
+		height: 200px;
+		resize: none;
+	}
+
+	.contentCancel {
+		color: #090909;
+		text-decoration: underline;
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0 0 0 10px;
+		padding: 20px 0 20px 0;
+	}
+	.contentBtnSumit {
+		border-radius: 3px;
+		display: inline-block;
+		background-color: #ea2b51;
+		border: none;
+		text-transform: uppercase;
+		font-weight: bold;
+		color: #ffffff;
+		padding: 16px 20px;
+		margin: 20px 0 0 0;
+		transition: 0.3s;
+	}
+
+	.contentBtnSumit:hover {
+		background-color: #cb1438;
+		color: #ffffff;
+		transition: 0.3s;
+	}
+}

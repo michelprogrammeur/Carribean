@@ -9,6 +9,8 @@ use App\Http\Requests;
 
 use App\User;
 use App\Mariage;
+use App\Article;
+use App\PictureArticle;
 
 use Validator;
 
@@ -32,10 +34,12 @@ class MariageController extends Controller
 		return view('admin.mariage.add-new-mariage');
 	}
 	public function show($id) {
+		$pictureArticle = PictureArticle::find($id);
 		$users = User::all();
+		$articles = Article::all();
 		$mariage = Mariage::find($id);
 	
-    	return view('front.mariage', compact('mariage', 'users'));
+    	return view('front.mariage', compact('pictureArticle', 'mariage', 'users', 'articles'));
 	}
 
 

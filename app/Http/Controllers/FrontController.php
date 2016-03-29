@@ -8,9 +8,13 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use Mail;
+use Cache;
+use App\Category;
 use App\Picture;
 use App\Mariage;
 use App\User;
+use App\PictureArticle;
+
 
 class FrontController extends Controller
 {
@@ -28,9 +32,20 @@ class FrontController extends Controller
     }
 
     public function showGalerie() {
+        $categories = Category::all();
         $pictures = Picture::all();
 
-        return view('front.galerie', compact('pictures'));
+        return view('front.galerie-categories', compact('categories', 'pictures'));
+    }
+
+    public function showPicturesByCategory(Request $request, $id) {
+        $category = Category::find($id);
+        $pictures = Picture::all();
+
+        //dd($pictures);
+
+        return view('front.category', compact('category', 'pictures'));
+
     }
 
 

@@ -12,6 +12,14 @@
          <input type="file" class="form-control" name="userfile">
       </div>
 
+      <label>Categories</label>
+      <select name="category_id">
+         @foreach($categories as $id=>$title)
+            <option value="{{$id}}" {{$picture->category_id==$id? 'selected': ''}}>{{ $title }}</option>
+         @endforeach
+         <option value="0" {{is_null($picture->category_id)? 'selected': ''}}>Non catégorisé</option>
+      </select>
+
       <div class="form-group">
          <label for="caption">Titre</label>
          <input type="text" class="form-control" name="caption">

@@ -1,14 +1,73 @@
+.logo {
+	padding-top: 16px;
+	display: block;
+	text-align: center;
+}
+#header {
+	max-width: 100%;
+	width: 100%;
+	background:url('../images/motif.png') repeat 0 0;
+	position: relative; 
+}
 
 .navbar {
 	width: 100%;
+	padding: 0;
+	ul {
+		text-align: center;
+		padding: 0;
+	}
 	li {
 		display: inline-block;
-		background-color: #b2b2b2;
 		vertical-align: top;
+		padding: 0 0 9px 0;
 		a {
-			padding: 12px 16px;
+			font-size: 16px;
+			text-transform: uppercase;
+			padding: 11px 23px 9px 23px;
+			font-family: 'ProximaNovaRegular',verdana, arial, sans-serif;
 			display: block;
+			color: #bebebe;
+		}
+
+	}
+	li ul li {
+		display: none;
+	}
+	.dashboard {
+		a {
+			color: #c92f51;
+		}
+	}
+	.deco {
+		border-radius: 4px;
+		background-color: #3f3e3e;
+		a {
 			color: #ffffff;
 		}
 	}
 }
+
+.btnEvenement {
+	position: absolute;
+	right: 50px;
+	top: 50px;
+	text-align: center;
+	background: url('../images/evenement.png') repeat 0 0;
+	a {
+		font-size: 12px;
+		text-decoration: none;
+		text-transform: uppercase;
+		padding: 15px 14px 14px 30px; 
+		display: block;
+		color: #ffffff;
+		background: url('../images/fleche.png') no-repeat 10% 50%;
+		font-family: 'ProximaNovaRegular',verdana, arial, sans-serif;
+		transition: 0.2s;
+	}
+	a:hover {
+		background: url('../images/fleche.png') no-repeat 13% 50%;
+		transition: 0.2s;
+	}
+}
+

@@ -17,4 +17,8 @@ class Mariage extends Model
     public function users() {
     	return $this->hasMany('App\User');
     }
+
+    public function article() {
+        return $this->hasMany('App\Article');
+    }
 }
