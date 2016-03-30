@@ -1,27 +1,21 @@
 @extends('layouts.master')
 
 @section('content')
-	<form class="" enctype="multipart/form-data" action="{{url('article-maries/update', $article->id)}}" method="post">
+<section class="section-content-maries">
+   <div class="section-content-container">
+	<form class="create-article-formulaire" enctype="multipart/form-data" action="{{url('article-maries/update', $article->id)}}" method="post">
 	{{csrf_field()}}
-	<h2>Modifier cet article</h2>
+	<h2 class="titleCreationArticle">Modifier cet article</h2>
 
-	<div class="form-group">
-		<label for="articleTitle">title</label>
-		<input type="text" class="form-control" name="articleTitle" value="{{$article->title}}">
-	</div>
-
-	<div class="form-group">
-		<label for="articlePicture">Image</label>
-		<input type="file" class="form-control" name="articlePicture" value="">
-	</div>
+	<input type="text" class="articleChamps" name="articleTitle" value="{{$article->title}}">
 
 
-	<div class="form-group">
-		<label for="articleContenu">contenu</label>
-		<textarea class="form-control" name="articleContenu">{{$article->content}}</textarea>
-	</div>
+	<input type="file" class="input-file" name="articlePicture" value="">
 
-	<button type="submit" class="btn btn-primary">Modifier</button>
-	<a href="{{ url('/article-maries', $article->id) }}" class="btn btn-warning">Retour</a>
+	<textarea class="articleChamps textarea-article" name="articleContenu">{{$article->content}}</textarea>
+
+	<button type="submit" class="articleBtnSumit">Modifier</button>
     </form>
+   	</div>
+</section>
 @stop

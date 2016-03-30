@@ -1,12 +1,8 @@
 @extends('layouts.master')
 
 @section('content')
-	<h1 class="pageListeMariagesTitle">Liste des mariages actuels<h1>
-	<a class="btnCreateMariage" href="{{ url('dashboard-maries/create', $mariage->id) }}" role="button">Creater votre contenu</a>
+	<a class="btnCreateMariage" href="{{ url('dashboard-maries/create', $mariage->id) }}" role="button"><p>Creation contenu</p></a>
 
-	<a class="btnCreateMariage" href="{{ url('article-maries/create', $mariage->id) }}" role="button">Creation Article</a>
+	<a class="btnCreateMariage" href="{{ url('article-maries/create', $mariage->id) }}" role="button"><p>Creation Article</p></a>
 	
-	<div class="container-cartClient">
-	
-	</div>
 @stop

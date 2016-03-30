@@ -61,7 +61,7 @@ class MariageController extends Controller
 	        $validation = Validator::make($request->all(), [
 				'name'     => 'required|string',
 				'email'    => 'required|email',
-				'password' => 'required|max:30'
+				'password' => 'required|max:30',
 	        ]);
 
 	        // Check if it fails //

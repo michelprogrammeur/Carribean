@@ -18,22 +18,16 @@
 		<div class="wrapper">
 			<ul>
 				<li>
-					<a href="">
-						<img src="../assets/images/picto_ceremonie.png">
-						<p>Cérémonie</p>
-					</a>
+					<img src="../assets/images/ceremonie-2.png">
+					<p>Cérémonie</p>
 				</li>
 				<li>
-					<a href="">
-						<img src="../assets/images/picto_organisation.png">
-						<p>Organisation complète</p>
-					</a>
+					<img src="../assets/images/reception-2.png">
+					<p>Organisation complète</p>
 				</li>
 				<li>
-					<a href="">
-						<img src="../assets/images/picto_ceremonie.png">
-						<p>Conciergerie</p>
-					</a>
+					<img src="../assets/images/conciergerie-2.png">
+					<p>Conciergerie</p>
 				</li>
 			</ul>
 		</div>
@@ -234,7 +228,14 @@
 		<p class="section-citation">Suivez les coulisses de nos prestations</p>
 
 		<div class="flux-instagram">
-			
+			<ul>
+				<li><img src="../assets/images/insta-1.jpg"></li><!--
+			 --><li><img src="../assets/images/insta-2.jpg"></li><!--
+			 --><li><img src="../assets/images/insta-3.jpg"></li><!--
+			 --><li><img src="../assets/images/insta-4.jpg"></li><!--
+			 --><li><img src="../assets/images/insta-5.jpg"></li><!--
+			 --><li><img src="../assets/images/insta-6.jpg"></li>
+			</ul>
 		</div>
 	</section>
 

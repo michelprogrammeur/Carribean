@@ -1,25 +1,20 @@
 @extends('layouts.master')
 
 @section('content')
-	<form class="" enctype="multipart/form-data" action="{{url('createArticle', $mariage->id)}}" method="post">
+<section class="section-content-maries">
+   <div class="section-content-container">
+	<form class="create-article-formulaire" enctype="multipart/form-data" action="{{url('createArticle', $mariage->id)}}" method="post">
 	{{csrf_field()}}
+	<h2 class="titleCreationArticle">Création article</h2>
 
-	<div class="form-group">
-		<label for="articleTitle">title</label>
-		<input type="text" class="form-control" name="articleTitle" value="">
-	</div>
+	<input type="text" class="articleChamps" name="articleTitle" placeholder="Titre de votre article" value="">
 
-	<div class="form-group">
-		<label for="articlePicture">Image</label>
-		<input type="file" class="form-control" name="articlePicture" value="">
-	</div>
+	<input class="input-file" type="file" class="form-control" name="articlePicture" value="">
 
-	<div class="form-group">
-		<label for="articleContenu">contenu</label>
-		<textarea class="form-control" name="articleContenu"></textarea>
-	</div>
+	<textarea class="articleChamps textarea-article" placeholder="Votre contenu" name="articleContenu"></textarea>
 
-	<button type="submit" class="btn btn-primary">creater</button>
-	<a href="{{ url('/mariage', $mariage->id) }}" class="btn btn-warning">Retour</a>
+	<button type="submit" class="articleBtnSumit">creater</button>
     </form>
+    </div>
+</section>
 @stop

@@ -27,7 +27,8 @@
 		</div>
 	</div>
 
-	<footer>
+	<footer id="footer">
+		@include('partials.footer')
 	</footer>
 
 	@yield('scripts')

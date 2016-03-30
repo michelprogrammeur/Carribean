@@ -1,14 +1,379 @@
 
 .section-maries {
 	width: 100%;
+	position: relative;
+}
+.btnDashboard-maries {
+	display: block;
+	border: 1px solid #ffffff;
+	position: absolute;
+	left: 100px;
+	top: 50px;
+	padding: 14px 30px;
+	font-size: 14px;
+	font-weight: 500;
+	font-family: 'ProximaNovaRegular',verdana, arial, sans-serif;
+	a {
+		color: #ffffff;
+	}
+}
+
+
+.container-contentMaries {
+	z-index: 300;
 	background: url('../images/fleurs.png') no-repeat 0 0;
 	background-size: cover;
-}
-.container-contentMaries {
 	width: 100%;
 	text-align: center; 
+	color: #ffffff;
+	font-family: 'K22Didoni', verdana, arial, sans-serif;
+	p {
+		padding: 0 0 180px 0;
+		text-transform: uppercase;
+		font-weight: 600;
+		font-size: 12px;
+		font-family: 'ProximaNovaRegular',verdana, arial, sans-serif;
+	}
 	.compte-a-rebours {
-		padding: 100px 0 30px 0;
-			
+		padding: 100px 0 75px 0;
+		display: block;
+		font-size: 36px;	
+		background: url('../images/motif-anneaux-gris.png') no-repeat 50% 82%;
+	}
+	.mariage-date {
+		padding: 0 0 22px 0;
+		font-size: 16px;
+		font-family: 'K22Didoni', verdana, arial, sans-serif;
+	}
+	.nom-maries {
+		padding: 0 0 11px 0;
+		font-size: 30px;
+		font-family: 'CinzelRegular_0',verdana, arial, sans-serif;
+		font-weight: 100;
+		text-transform: uppercase;
+	}	
+}
+
+.section-conciergerie {
+	z-index: 100;
+	position: relative;
+	background: url('../images/motif.png') repeat 0 0;
+	padding: 0 100px 51px 100px;
+	font-size: 18px;
+	font-family: 'ProximaNovaRegular',verdana, arial, sans-serif;
+	color: #6b6b6e;
+	text-transform: uppercase;
+	font-weight: 500;
+	h2 {
+		display: inline-block;
+		color: #ea2b51;
+		padding: 0 48px 0 0;
+	}
+	ul {
+		display: inline-block;
+		li {
+			padding: 0 12px;
+			display: inline-block;
+		}
+	}
+}
+.section-conciergerie-container{
+	z-index: 500;
+	position: relative;
+	top: -50px;
+	padding: 40px 46px;
+	background-color: #ffffff;
+	border: 2px solid #d8e8fd;
+	span {
+		color: #ea2b51;
+		font-weight: 600;
+	}
+	.heure {
+		display: block;
+		position: absolute;
+		right: 50px;
+		top: 27px;
+	}
+}
+
+.section-articles {
+	padding: 0 100px 0 100px;
+	background: url('../images/motif.png') repeat 0 0;
+}
+.section-articles-container {
+	background-color: #ffffff;
+	border-left: 2px solid #d8e8fd;
+	border-right: 2px solid #d8e8fd;
+	border-top: 2px solid #d8e8fd;
+	padding: 70px 50px 0 50px;
+}
+.article-top {
+	width: 100%;
+	color: #6b6b6e;
+	box-sizing: border-box;
+	padding: 0 0 0 0;
+	.slider-article {
+		font-size: 18px;
+		width: 25%;
+		display: inline-block;
+		vertical-align: top;
+		font-family: 'ProximaNovaRegular',verdana, arial, sans-serif;
+		h2 {
+			padding: 0 0 20px 0;
+		}
+		li {
+			display: block;
+			padding: 11px 0 11px 43px;
+			background: url('../images/anneaux-rose.png') no-repeat 0% 50%;
+		}
+	}
+	.maries-instagram {
+		line-height: 26px;
+		width: 74%;
+		display: inline-block;
+		vertical-align: top;
+		h2 {
+			width: 100%;
+			font-weight: 100;
+			font-size: 30px;
+			padding: 0 0 75px 0; 
+			font-family: 'CinzelRegular_0',verdana, arial, sans-serif;
+			span {
+				color: #c92f51;
+			}
+		}
+		ul {
+			width: 80%;
+			li {
+				display: inline-block;
+				vertical-align: top;
+				box-sizing: border-box;
+			}
+		}
+		.image-1 {
+			width: 280px;
+			height: 280px;
+			background: url('../images/image_17.png') no-repeat 0 0;
+			background-size: cover;
+		}
+		.image-2 {
+			width: 280px;
+			height: 280px;
+			background: url('../images/image_18.png') no-repeat 0 0;
+			background-size: cover;
+		}
+		.image-3 {
+			width: 280px;
+			height: 280px;
+			background: url('../images/image_19.png') no-repeat 0 0;
+			background-size: cover;
+		}
+		.image-4 {
+			width: 280px;
+			height: 280px;
+			background: url('../images/image_21.png') no-repeat 0 0;
+			background-size: cover;
+		}
+		.image-5 {
+			width: 280px;
+			height: 280px;
+			background: url('../images/image_22.png') no-repeat 0 0;
+			background-size: cover;
+		}
+		.image-6 {
+			width: 280px;
+			height: 280px;
+			background: url('../images/image_23.png') no-repeat 0 0;
+			background-size: cover;
+		}
+	}
+}
+.articles-container {
+	width: 100%;
+	.article {
+		width: 100%;
+	}	
+	h2 {
+		background: url('../images/motif-anneaux.png') no-repeat 50% 31%;
+		display: block;
+		padding: 200px 0 75px 0;
+		text-align: center;
+		font-size: 30px;
+		color: #c92f51;
+		font-family: 'CinzelRegular_0',verdana, arial, sans-serif;
+	}
+	.article-img {
+		width: 100%;
+		display: block;
+	}
+	.article-donnees {
+		background: url('../images/motif.png') repeat 0 0;
+		padding: 0 100px;
+		div {
+			background-color: #ffffff;
+			width: 100%;
+			border-left: 2px solid #d8e8fd;
+			border-right: 2px solid #d8e8fd;
+			box-sizing: border-box;
+		}
+	}
+	.article-content {
+		text-align: justify;
+		width: 50%;
+		padding: 50px 25% 0 25%;
+		font-size: 14px;
+		font-family: 'ProximaNovaRegular',verdana, arial, sans-serif;
+		color: #6b6b6e;
+		line-height: 20px;
+	}
+	.article-date {
+		width: 50%;
+		display: block;
+		padding: 15px 25% 15px 25%;
+		font-family: 'ProximaNovaRegular',verdana, arial, sans-serif;
+		color: #bdbdbd;
+		font-size: 12px;
+	}
+	.article-commentaire-container {
+		position: relative;
+		width: 50%;
+		display: block;
+		border: none !important;
+		padding: 15px 25% 2px 25%;
+		div {
+			width: 100%;;
+			display: inline-block;
+			border: none;
+			border-top: 1px solid #bdbdbd;
+		}
+		.btnArticleAdmin {
+			top: 46px;
+			position: absolute;
+			background: none;
+			text-align: right;
+			width: 50%;
+			display: inline-block;
+			border: none !important;
+			padding: 8px 0 0 20px;
+			a {
+				display: inline-block;
+				padding: 20px;
+			}
+		}
+		.form-delete {
+			display: inline-block;
+		}
+		.article-delete {
+			background: url('../images/delete.png') no-repeat 50% 30%;
+			color: #c92f51;
+			background-color: transparent;
+			display: inline-block;
+			padding: 10px 0;
+			width: 14px;
+			border: none;
+		}
+	}
+}
+
+
+.commentaire-container {
+	width: 100%;
+	.commentaire-date {
+		display: block;
+		font-size: 14px;
+		font-family: 'ProximaNovaRegular',verdana, arial, sans-serif;
+		font-weight: 100;
+		color: #bebebe;
+	}
+	.commentaire-name {
+		display: block;
+		font-size: 30px;
+		font-family: 'CinzelRegular_0',verdana, arial, sans-serif;
+		font-weight: 100;
+		color: #6b6b6e;
+		padding: 10px 0 35px 0;
+	}
+	.commetaire-text {
+		color: #bebebe;
+		font-size: 14px;
+		line-height: 24px;
+		text-align: justify;
+		font-family: 'ProximaNovaRegular',verdana, arial, sans-serif;
+	}
+}
+.commentaire {
+	width: 100%;
+	display: block;
+	box-sizing: border-box;	
+	.ajouter-commentaire {
+		padding: 20px 0;
+		color: #bebebe;
+		width: 200px;
+		display: inline-block;
+	}
+	.commentaire-ajouter {
+		padding: 20px 0;
+		color: #bebebe;
+		width: 200px;
+		display: inline-block;
+	}
+
+	details[open] summary::-webkit-details-marker {
+	   color:#eaeaea;
+	   background:#eaeaea;
+	   outline: 2px solid #ADCA48;
+	}
+	summary:after {
+	   color: #ADCA48;
+	   float: left;
+	   font-size: 1.5em;
+	   font-weight: bold;
+	   margin: -5px 5px 0 0;
+	   padding: 0;
+	   text-align: center;
+	   width: 20px;
+	}
+
+	details[open] summary:after {
+	   content: "-";
+	}
+}
+
+
+.commentaire-formulaire-container {
+	padding: 0 2%;
+	width: 100%;
+	margin: 0;
+	box-sizing: border-box;
+	.commentaireChamps {
+		display: inline-block;
+		margin: 2%;
+		width: 46%;
+		box-sizing: border-box;
+		padding: 14px 30px;
+	}
+	.textarea-commentaire {
+		margin: 2%;
+		height: 180px;
+		width: 96%;
+    	overflow-x: hidden;
+    	resize: none;
+    	text-align: left;
+    	padding: 0;
+	}
+}
+
+.commentaire-form {
+	width: 100%;
+	display: block;
+	box-sizing: border-box;
+	form {
+		padding: 20px 0 0 0;	
+	}
+	.ajouter-commentaire {
+		padding: 14px 0 0 0;
+		color: #bebebe;
+		width: 200px;
+		display: inline-block;
 	}
 }

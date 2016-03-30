@@ -8,22 +8,31 @@
 			<li><a href="{{url('/')}}">Accueil</a></li>
 			<li><a href="{{url('agence')}}">L'agence</a></li>
 			<li><a href="{{url('')}}">Les îles de Guadeloupe</a></li>
-			<li>
+			<li class="prestation">
 				<a href="{{url('prestations')}}">Prestations</a>
-				<ul>
-					<li><a href="{{url('')}}">Mariage</a></li>
-					<li><a href="{{url('formules-evenements-prives')}}">Evenements privés</a></li>
-					<li><a href="{{url('conciergerie')}}">Conciergerie</a></li>
+				<div>
+				<ul class="nav-nv2">
+					<li>
+						<a href="{{url('')}}">Cérémonie</a>
+						<p>Formule Alpinia</p>
+					</li>
+					<li>
+						<a href="{{url('formules-evenements-prives')}}">Evenements privés</a>
+						<p>Formule Anthurium</p>
+						<p>Formule Allamanda</p>
+					</li>
+					<li>
+						<a href="{{url('conciergerie')}}">Conciergerie</a>
+						<p>Formule Hibiscus</p>
+					</li>
 				</ul>
+				</div>
 			</li>
 			<li><a href="{{url('galerie-categories')}}">Galerie</a></li>
 
 			<li><a href="{{url('livredor')}}">Livre d'or</a></li>
 			<li>
 				<a href="{{url('contact')}}">Contact</a>
-				<ul>
-					<li><a href="{{url('livredor')}}">Mentions légales</a></li>
-				</ul>
 			</li>
 
 		@if(Auth::check())
@@ -36,6 +45,8 @@
 
 		</ul>
 	</nav>
+
+	
 
 
 	<span class="btnEvenement">

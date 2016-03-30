@@ -5,8 +5,6 @@
 	<meta name="description" content="" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Panier Laravel</title>
-	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="{{url('assets/css/swiper.min.css')}}">
 	<link type="text/css" rel="stylesheet" href="{{url('assets/css/owl.carousel.css')}}">
 	<link type="text/css" rel="stylesheet" href="{{url('assets/css/animate.css')}}">
@@ -93,6 +91,25 @@
 		    }
 		  });
 
+		});
+	</script>
+
+	<script>
+		$(document).ready(function() {
+	 		if (!('open' in document.createElement('details'))) {
+				$("details").each(function() {
+			      	$(this).find("summary").show().click(function() {
+			        	$(this).siblings().toggle();
+			        	$(this).parent('details').toggleClass('open');
+			    	});
+				    var opened = $(this).attr("open");
+				    if(opened==undefined) {
+				        $(this).children().hide();
+				        $(this).children("summary").show();
+				    }
+	    		});
+		  	// Fermeture de la condition et de $(document).ready
+		  	}
 		});
 	</script>
 </body>

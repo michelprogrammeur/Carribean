@@ -1,0 +1,76 @@
+.section-formulaire-connexion {
+	width: 100%;
+	padding: 0 50px;
+	box-sizing: border-box;
+	background: url('../images/motif.png') repeat 0 0;
+}
+.section-formulaire-container {
+	background: #ffffff;
+	width: 100%;
+	padding: 50px 0 0 0;
+	box-sizing: border-box;
+}
+
+.create-picture-formulaire {
+	text-align: center;
+	position: relative;
+	width: 400px;
+	background: url('../images/motif.png') repeat 0 0;
+	box-shadow: 0px 1px 3px 0px #b9bbbd;
+	padding: 50px 25px;
+	margin: 0 auto;
+	border: 2px solid #d8e8fd;
+	.titleCreationPicture {
+		font-size: 30px;
+		font-family: 'CinzelRegular_0',verdana, arial, sans-serif;
+		font-weight: 100;
+		text-transform: uppercase;
+		color: #c92f51;
+		padding: 0 0 50px 0;
+	}
+
+	.pictureChamps {
+		width: 100%;
+		padding: 14px 30px;
+		font-size: 16px;
+		box-sizing: border-box;
+		border: 1px solid #6b6b6e;
+		color: #bebebe;
+		display: inline-block;
+		margin: 0 0 50px 0;
+	}
+	.input-file-picture button{
+	}
+	.option-category {
+		padding: 10px;
+	}
+	.input-file {
+		color: #bdbdbd;
+		margin: 0 0 50px 0;
+	}
+}
+
+
+
+
+.loginBtnSumit {
+	text-transform: uppercase;
+	font-family: 'ProximaNovaRegular',verdana, arial, sans-serif;
+	background: url('../images/fleche.png') no-repeat 10% 50%,
+				url('../images/btn-add-picture.png') no-repeat 50% 50%;
+	margin: 20px auto 30px auto;
+	display: block;
+	width: 173px;
+	height: 41px;
+	border: none;
+	color: #ffffff;
+	transition: 0.3s;
+}
+.loginBtnSumit:hover {
+	background: url('../images/fleche.png') no-repeat 13% 50%,
+				url('../images/btn-add-picture.png') no-repeat 50% 50%;
+	transition: 0.3s;
+}
+.image-picture {
+	margin: 0 0 20px 0;
+}

@@ -2,31 +2,29 @@
 
 @section('content')
    @include('admin.picture.error-notification')
-   
-   <form enctype="multipart/form-data" class="" action="{{url('picture/'.$picture->id)}}" method="post">
+<section class="section-liste-mariages">
+   <div class="section-mariage-container">
+   <form enctype="multipart/form-data" class="create-picture-formulaire" action="{{url('picture/'.$picture->id)}}" method="post">
    {{method_field('PUT')}}
    {{csrf_field()}}
+      <h1 class="titleCreationPicture">Modifier</h1>
 
-      <img src="{{ asset($picture->file) }}" height="150" />
-      <div class="form-group">
-         <input type="file" class="form-control" name="userfile">
+      <img class="image-picture" src="{{ asset($picture->file) }}" height="150" />
+      <div class="input-file-picture">
+         <input type="file" class="input-file" name="userfile">
       </div>
 
-      <label>Categories</label>
-      <select name="category_id">
+      <select class="pictureChamps" name="category_id">
          @foreach($categories as $id=>$title)
             <option value="{{$id}}" {{$picture->category_id==$id? 'selected': ''}}>{{ $title }}</option>
          @endforeach
          <option value="0" {{is_null($picture->category_id)? 'selected': ''}}>Non catégorisé</option>
       </select>
 
-      <div class="form-group">
-         <label for="caption">Titre</label>
-         <input type="text" class="form-control" name="caption">
-      </div>
+      <input type="text" class="pictureChamps" placeholder="Titre de la photo" name="caption">
 
-      <button type="submit" class="btn btn-primary">Save</button>
-      <a href="{{ url('picture') }}" class="btn btn-warning">Cancel</a>
-
+      <button type="submit" class="loginBtnSumit">Save</button>
    </form>
+   </div>
+</section>
 @stop

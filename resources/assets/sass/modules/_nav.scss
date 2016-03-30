@@ -13,14 +13,35 @@
 .navbar {
 	width: 100%;
 	padding: 0;
+	margin: 0;
 	ul {
 		text-align: center;
 		padding: 0;
+	}
+	.prestation div{
+		visibility: hidden;
+		opacity: 0;
+		transition: 0.3s
+	}
+	.prestation:hover div{
+		visibility: visible;
+		opacity: 1;
+		transition: 0.3s
 	}
 	li {
 		display: inline-block;
 		vertical-align: top;
 		padding: 0 0 9px 0;
+		div {
+			position: absolute;
+			left: 0;
+			z-index: 1000;
+			padding: 0 20px 0 140px;
+			width: 100%;
+			height: 120px;
+			background:url('../images/motif.png') repeat 0 0;
+			box-sizing: border-box;
+		}
 		a {
 			font-size: 16px;
 			text-transform: uppercase;
@@ -30,9 +51,6 @@
 			color: #bebebe;
 		}
 
-	}
-	li ul li {
-		display: none;
 	}
 	.dashboard {
 		a {
@@ -45,6 +63,33 @@
 		a {
 			color: #ffffff;
 		}
+	}
+}
+.nav-nv2 {
+	position: relative;
+	z-index: 1000;
+	width: 100%;
+}
+.nav-nv2 li {
+	position: relative;
+	display: inline-block;
+	padding: 20px;
+	vertical-align: top;
+	a {
+		color: #c92f51;
+		display: block;
+		font-size: 14px;
+		text-transform: uppercase;
+		padding: 0 0 20px 0;
+		font-family: 'ProximaNovaRegular',verdana, arial, sans-serif;
+	}
+	p {
+		padding: 0 0 10px 0;
+		color: #bebebe;
+		font-size: 12px;
+		text-transform: uppercase;
+		font-weight: 100;
+		font-family: 'ProximaNovaRegular',verdana, arial, sans-serif;
 	}
 }
 
@@ -71,3 +116,17 @@
 	}
 }
 
+.flux-instagram {
+	width: 100%;
+	ul {
+		width: 100%;
+		li {
+			display: inline-block;
+			width: 16.6666%;
+			vertical-align: top;
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
