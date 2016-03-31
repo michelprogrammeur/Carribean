@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
 @section('content')
-<section class="section-liste-mariages">
+<section class="section-add-picture">
    <div class="section-mariage-container">
 	
 

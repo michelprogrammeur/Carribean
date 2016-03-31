@@ -11,6 +11,8 @@
 		<p class="mariage-date">{{$mariage->datemariage}}</p>
 		<h2 class="nom-maries">{{$mariage->title}}</h2>
 		<p>#mariagedemarineetarthur</p>
+
+		<p class="mariage-btnBlanc"><a href="">aventure</a></p>
 	</div>
 
 	<div class="section-conciergerie">
@@ -43,6 +45,7 @@
 			</div>
 			<div class="maries-instagram">
 				<h2>live <span>instagram</span></h2>
+				<p class="hashtag">#mariagedemarineetarthur</p>
 				<ul>
 					<li class="image-1"></li><!--
 				 --><li class="image-2"></li><!--
@@ -106,7 +109,7 @@
 							</details>
 
 							<div class="btnArticleAdmin">
-								<a href="{{ url('edit-article', $article->id) }}">Modifier</a>
+								<a class="btnModifier" href="{{ url('edit-article', $article->id) }}"></a>
 								<form method="post" action="{{url('/article-maries/delete', $article->id)}}" class="form-delete">
 						         {{ method_field('DELETE') }}
 						         {{ csrf_field() }}

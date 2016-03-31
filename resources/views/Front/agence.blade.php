@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
 @section('content')
-	<p>Page de l'agence</p>
+	<section class="section-prestation">
+		<div class=" prestations-container">
+			<p class="title-agence">Page de l'agence</p>
+		</div>
+	</section>
 @stop

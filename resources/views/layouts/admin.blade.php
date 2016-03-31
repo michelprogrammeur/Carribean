@@ -5,9 +5,18 @@
 	<meta name="description" content="" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="{{url('assets\bootstrap\css\bootstrap.min.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{url('assets/css/swiper.min.css')}}">
+	<link type="text/css" rel="stylesheet" href="{{url('assets/css/owl.carousel.css')}}">
+	<link type="text/css" rel="stylesheet" href="{{url('assets/css/animate.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{url('assets/css/slick.css')}}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="{{url('assets/css/default.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{url('assets/css/component.css')}}">
+
+	<link rel="stylesheet" type="text/css" href="{{url('assets/css/lightbox.min.css')}}">
+	<!-- mon css -->
 	<link rel="stylesheet" type="text/css" href="{{url('assets/css/app.min.css')}}">
-	<link type="text/css" rel="stylesheet" href="{{url('assets/css/lightGallery.css')}}">
+
 	
 </head>
 
@@ -32,7 +41,11 @@
 	</footer>
 
 	@yield('scripts')
-	<script src="{{url('assets/js/jquery.min.js')}}"></script>
-	<script src="{{url('assets/js/lightGallery.min.js')}}"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="{{url('assets/js/lightbox.min.js')}}"></script>
+
+	<script src="{{url('assets/js/scrollreveal.min.js')}}"></script>
+
+	<script src="{{url('assets/js/windows_viewport.js')}}"></script>
 </body>
 </html>

@@ -99,7 +99,7 @@
 									<p>de lieux</p>
 								</li>
 							</ul>
-							<p class="btnDecouvrir"><a href="">Découvrir</a></p>
+							<p class="btnDecouvrir"><a href="{{url('ceremonie')}}">Découvrir</a></p>
 						</div>
 					</div>
 				</li><!--

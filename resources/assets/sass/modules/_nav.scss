@@ -18,15 +18,55 @@
 		text-align: center;
 		padding: 0;
 	}
-	.prestation div{
-		visibility: hidden;
+	.prestation ul {
+		position: absolute;
+		transition: 0.3s;
+		text-align: left;
 		opacity: 0;
-		transition: 0.3s
+		transition: 0.3s;
+		display: none;
 	}
-	.prestation:hover div{
+	.prestation:hover ul{
+		width: 100%;
+		top: 160px;
+		left: 0;
+		z-index: 99999;
+		background: red;
+		position: absolute;
+		display: block;
+		transition: 0.3s;
+		padding: 0 0 0 32.7%;
+		background:url('../images/motif.png') repeat 0 0;
+		opacity: 1;
+		transition: 0.3s;
+	}	
+	.nav-nv2 li {
+		position: relative;
+		display: inline-block;
+		padding: 20px;
+		vertical-align: top;
+		a {
+			color: #c92f51;
+			display: block;
+			font-size: 14px;
+			text-transform: uppercase;
+			padding: 0 0 20px 0;
+			font-family: 'ProximaNovaRegular',verdana, arial, sans-serif;
+		}
+		p {
+			padding: 0 0 10px 0;
+			color: #bebebe;
+			font-size: 12px;
+			text-transform: uppercase;
+			font-weight: 100;
+			font-family: 'ProximaNovaRegular',verdana, arial, sans-serif;
+		}
+	}
+	.prestation:hover .nav-nv2{
+		display: block;
 		visibility: visible;
 		opacity: 1;
-		transition: 0.3s
+		transition: 0.3s;
 	}
 	li {
 		display: inline-block;
@@ -59,39 +99,14 @@
 	}
 	.deco {
 		border-radius: 4px;
-		background-color: #3f3e3e;
+
 		a {
-			color: #ffffff;
+			color: #3f3e3e;
+			border: 1px solid #3f3e3e;
 		}
 	}
 }
-.nav-nv2 {
-	position: relative;
-	z-index: 1000;
-	width: 100%;
-}
-.nav-nv2 li {
-	position: relative;
-	display: inline-block;
-	padding: 20px;
-	vertical-align: top;
-	a {
-		color: #c92f51;
-		display: block;
-		font-size: 14px;
-		text-transform: uppercase;
-		padding: 0 0 20px 0;
-		font-family: 'ProximaNovaRegular',verdana, arial, sans-serif;
-	}
-	p {
-		padding: 0 0 10px 0;
-		color: #bebebe;
-		font-size: 12px;
-		text-transform: uppercase;
-		font-weight: 100;
-		font-family: 'ProximaNovaRegular',verdana, arial, sans-serif;
-	}
-}
+
 
 .btnEvenement {
 	position: absolute;
@@ -167,4 +182,7 @@
 .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
   left: 35%;
   right: 35%;
+}
+.active {
+	color: #6b6b6e !important;
 }

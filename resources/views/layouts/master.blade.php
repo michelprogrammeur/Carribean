@@ -59,7 +59,7 @@
 	<script src="{{url('assets/js/owl.carousel.min.js')}}"></script>
 	<script src="{{url('assets/js/scrollreveal.min.js')}}"></script>
 
-	<!--<script src="{{url('assets/js/windows_viewport.js')}}"></script>-->
+	<script src="{{url('assets/js/windows_viewport.js')}}"></script>
     <script>
     	var swiper = new Swiper('.swiper-container');
     </script>
@@ -178,15 +178,6 @@
 			scale       : 0,
 		});
 
-		sr.reveal('.nav-nv2', { 
-			origin      : 'top',
-			distance    : '20px',
-			duration    : 1000,
-			delay       : 0,
-			rotate      : { x: 0, y: 0, z: 0 },
-			opacity     : 0,
-			scale       : 0,
-		});
 
 		sr.reveal('.quota li', { 
 			origin      : 'top',

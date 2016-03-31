@@ -8,10 +8,10 @@
 		<ul>
 			<li><a class="hvr-underline-from-center" href="{{url('/')}}">Accueil</a></li>
 			<li><a class="hvr-underline-from-center" href="{{url('agence')}}">L'agence</a></li>
-			<li><a class="hvr-underline-from-center" href="{{url('')}}">Les îles de Guadeloupe</a></li>
+			<li><a class="hvr-underline-from-center" href="{{url('guadeloupe')}}">Les îles de Guadeloupe</a></li>
 			<li class="prestation">
 				<a class="hvr-underline-from-center" href="{{url('prestations')}}">Prestations</a>
-				<div>
+
 				<ul class="nav-nv2">
 					<li>
 						<a href="{{url('ceremonie')}}">Cérémonie</a>
@@ -27,7 +27,7 @@
 						<p>Formule Hibiscus</p>
 					</li>
 				</ul>
-				</div>
+
 			</li>
 			<li><a class="hvr-underline-from-center" href="{{url('galerie-categories')}}">Galerie</a></li>
 

@@ -1,31 +1,47 @@
 @extends('layouts.master')
 
 @section('content')
-	<form class="contactFormulaire" name="form" action="{{url('send')}}" method="post" >
 		{{csrf_field()}}
 
-		<h2>Contact</h2>
-		<span class="input input--hoshi">
-			<input name="email" class="input__field input__field--hoshi" type="email" id="input-4" value="{{old('email')}}"/>
-			<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
-				<span class="input__label-content input__label-content--hoshi">Email</span>
-			</label>
-		</span>
+	<section class="section-formulaire-command">
+		<form class="mariageCreationFormulaire " enctype="multipart/form-data" action="{{url('/mariage')}}" method="POST">
+		{{csrf_field()}}
+			<h1 class="titleCreationMariage">Contact<h1>
 
-		@if($errors->has('email')) 
-			<span class="error">{{$errors->first('email')}}</span>
-		@endif
+			<div class="inputContainer">
+				<input type="text" class="mariageChamps" name="name" placeholder="Nom*">
+			</div><!--
 
-		<label class="contactLabel">Message:</label>
-		<textarea class="contactTextarea" name="message" value="{{old('message')}}"></textarea>
+		 --><div class="inputContainer">
+				<input type="email" class="mariageChamps" name="email" placeholder="Prenom*" value="">
+			</div><!--
 
-		<input class="contactBtnSumit" type="submit" value="Envoyer">
+		 --><div class="inputContainer">
+				<input type="text" class="mariageChamps" name="password" placeholder="Telephone*" value="">
+			</div><!--
 
-		@if(Session::has('message'))
-			<span class="warming {{Session::get('alert')}}"> {{Session::get('message')}}</span>
-			
-		@endif
-	</form>
+		 --><div class="inputContainer">
+				<input type="text" class="mariageChamps" name="url" placeholder="Email*" value="">
+			</div>
+
+			<div class="selecteur-formules">
+			    <select class="formule-select-Champs" name="">
+		            <option class="option-category" value="">Forfait CP6</option>
+		            <option class="option-category" value="">Forfait CP7</option>
+		            <option class="option-category" value="">Forfait CP8</option>
+		            <option class="option-category" value="">Forfait CP9</option>
+		            <option class="option-category" value="">Forfait CP10</option>
+		            <option class="option-category" value="">Forfait CP11</option>
+		        </select>
+	    	</div>
+
+			<div class="contact-container-textarea">
+				<textarea class="contact-formulaire-textarea" name="message" value="" placeholder="Racompter nous votre mariage de rêve ..."></textarea>
+			</div>
+
+			<button type="submit" class="loginBtnSumit">Ajouter</button>
+	    </form>
+</section>
 @stop
 
 

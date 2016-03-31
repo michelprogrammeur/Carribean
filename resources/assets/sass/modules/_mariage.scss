@@ -28,7 +28,7 @@
 	color: #ffffff;
 	font-family: 'K22Didoni', verdana, arial, sans-serif;
 	p {
-		padding: 0 0 180px 0;
+		padding: 0 0 160px 0;
 		text-transform: uppercase;
 		font-weight: 600;
 		font-size: 12px;
@@ -51,7 +51,22 @@
 		font-family: 'CinzelRegular_0',verdana, arial, sans-serif;
 		font-weight: 100;
 		text-transform: uppercase;
-	}	
+	}
+	.mariage-btnBlanc {
+		width: 143px;
+		height: 41px;
+		background: url('../images/btn-blanc.png') no-repeat 0 0;
+		display: inline-block;
+		text-align: center;
+		a {
+			display: block;
+			padding: 14px 30px;
+			color: #6b6b6e;
+		}
+		a:hover {
+			color: #6b6b6e;
+		}
+	}
 }
 
 .section-conciergerie {
@@ -136,11 +151,15 @@
 			width: 100%;
 			font-weight: 100;
 			font-size: 30px;
-			padding: 0 0 75px 0; 
 			font-family: 'CinzelRegular_0',verdana, arial, sans-serif;
 			span {
 				color: #c92f51;
 			}
+		}
+		.hashtag {
+			color: #bebebe;
+			padding: 0 0 75px 0; 
+			font-size: 14px;
 		}
 		ul {
 			width: 80%;
@@ -215,6 +234,7 @@
 			border-left: 2px solid #d8e8fd;
 			border-right: 2px solid #d8e8fd;
 			box-sizing: border-box;
+			position: relative;
 		}
 	}
 	.article-content {
@@ -245,14 +265,15 @@
 			border-top: 1px solid #bdbdbd;
 		}
 		.btnArticleAdmin {
-			top: 46px;
+			top: 40px;
 			position: absolute;
 			background: none;
 			text-align: right;
-			width: 50%;
+			width: 200px;
+			right: 0;
 			display: inline-block;
 			border: none !important;
-			padding: 8px 0 0 20px;
+			padding: 0 0 0 20px;
 			a {
 				display: inline-block;
 				padding: 20px;
@@ -260,6 +281,12 @@
 		}
 		.form-delete {
 			display: inline-block;
+		}
+		.btnModifier {
+			background: url('../images/Pen.png') no-repeat 50% 30%;
+			background-size: 45%;
+			vertical-align: top;
+			opacity: 0.6;
 		}
 		.article-delete {
 			background: url('../images/delete.png') no-repeat 50% 30%;
@@ -303,17 +330,12 @@
 	width: 100%;
 	display: block;
 	box-sizing: border-box;	
-	.ajouter-commentaire {
-		padding: 20px 0;
-		color: #bebebe;
-		width: 200px;
-		display: inline-block;
-	}
 	.commentaire-ajouter {
 		padding: 20px 0;
 		color: #bebebe;
 		width: 200px;
 		display: inline-block;
+		cursor: pointer;
 	}
 
 	details[open] summary::-webkit-details-marker {
@@ -369,6 +391,7 @@
 		padding: 20px 0 0 0;	
 	}
 	.ajouter-commentaire {
+		cursor: pointer;
 		padding: 14px 0 0 0;
 		color: #bebebe;
 		width: 200px;

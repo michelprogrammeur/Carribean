@@ -118,7 +118,10 @@ class FrontController extends Controller
 
         return view('front.contact-formulaire');
     }
-    
+    public function pageGuadeloupe(){
+
+        return view('front.guadeloupe');
+    }
     
     public function ceremonie(){
 

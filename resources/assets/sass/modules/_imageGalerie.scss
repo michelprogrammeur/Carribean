@@ -8,6 +8,14 @@
 	width: 100%;
 	padding: 50px 75px;
 }
+.section-images-galerie-container h2{
+	text-align: center;
+	font-size: 30px;
+	color: #c92f51;
+	padding: 20px 0 40px 0;
+	font-family: 'CinzelRegular_0',verdana, arial, sans-serif;
+}
+
 .section-images-galerie-container ul {
 	width: 100%;
 	display: block;
@@ -16,8 +24,8 @@
 		display: inline-block;
 		box-sizing: border-box;
 		padding: 25px;
-		width: 350px;
-		height: 350px;
+		width: 420px;
+		height: 420px;
 		position: relative;
 		img {
 			height: 100%;

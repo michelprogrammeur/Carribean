@@ -12,7 +12,7 @@
 			<li class="container-cartClient">
 				<a class="cartClient" href="{{url('mariage/'.$mariage->id)}}">
 					<ul>
-						<li><img src="../assets/images/couple.jpg"></li>
+						<li><img src="../assets/images/couple2.jpg"></li>
 						<li class="cartClientTitle">Mariage#{{ $mariage->id }}</li>
 						@forelse ($mariage->users as $user)
 					    	<li>

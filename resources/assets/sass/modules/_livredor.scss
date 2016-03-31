@@ -3,3 +3,148 @@
 	position: relative;
 	
 }
+.section-form-livredor {
+	margin-top: 100px;
+	width: 100%;
+	img {
+		width: 100%;
+	}
+}
+.formulaire-livredor {
+	position: relative;
+	margin: -680px auto 0 auto;
+	width: 50%;
+	border: 3px solid #dce7fc;
+	padding: 100px 75px 0 75px;
+	background:url('../images/motif.png') repeat 0 0;
+}
+.article-livredor {
+	width: 100%;
+	border-bottom: 1px solid #f8e8eb;
+	position: relative;
+	margin: 0 0 30px 0;
+}
+.date-form-livredor {
+	font-size: 14px;
+	font-family: 'ProximaNovaRegular',verdana, arial, sans-serif;
+	color: #bdbdbd;
+	text-transform: uppercase;
+	span {
+		color: #c92f51;
+	}
+}
+.date-form-name {
+	padding: 20px 0 45px 0;
+	color: #6b6b6e;
+	font-size: 30px;
+	font-family: 'CinzelRegular_0',verdana, arial, sans-serif;
+}
+.form-text-livredor {
+	font-size: 14px;
+	line-height: 26px;
+	padding: 0 0 30px 0;
+}
+.form-img-livredor {
+	width: 67px !important;
+	height: 67px;
+	border-radius: 50%;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.pagination-livredor {
+	width: 100%;
+	text-align: center; 
+	font-size: 14px;
+	font-family: 'ProximaNovaRegular',verdana, arial, sans-serif;
+	color: #c92f51;
+	padding: 30px 10px 60px 10px;
+	letter-spacing: 9px;
+	span {
+		letter-spacing: 3px;
+	}
+}
+.formulaire-livredor-champs {
+	width: 100%;
+	.mariageChampsleft {
+		width: 29%;
+		margin: 0 4% 0 0;
+		padding: 14px 30px;
+		font-size: 16px;
+		box-sizing: border-box;
+		border: 1px solid #bdbdbd;
+		color: #bebebe;
+		display: inline-block;
+		font-family: 'ProximaNovaRegular',verdana, arial, sans-serif;
+
+	}
+	.mariageChampsmiddle {
+		margin: 0 2%;
+		width: 29%;
+		padding: 14px 30px;
+		font-size: 16px;
+		box-sizing: border-box;
+		border: 1px solid #bdbdbd;
+		color: #bebebe;
+		display: inline-block;
+		font-family: 'ProximaNovaRegular',verdana, arial, sans-serif;
+
+	}
+	.mariageChampsright {
+		width: 29%;
+		margin: 0 0 0 4%;
+		padding: 14px 30px;
+		font-size: 16px;
+		box-sizing: border-box;
+		border: 1px solid #bdbdbd;
+		color: #bebebe;
+		display: inline-block;
+		font-family: 'ProximaNovaRegular',verdana, arial, sans-serif;
+
+	}
+}
+.inputContainer {
+	width: 50%;
+	padding: 0 25px 50px 25px;
+	box-sizing: border-box;
+	display: inline-block;
+}
+.textarea-livredor {
+	font-size: 16px;
+	width: 100%;
+	margin: 45px 0 0 0; 
+	height: 160px;
+	padding: 14px;
+	resize: none;
+	font-family: 'ProximaNovaRegular',verdana, arial, sans-serif;
+}
+
+
+.btn-container-livredor {
+	padding: 30px 0 30px 0;
+	width: 100%;
+	text-align: center;
+}
+.btnFormulaire-livredor {	
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+	width: 143px;
+	height: 41px;
+	background: url('../images/evenement.png') repeat 0 0;
+	a {
+		font-size: 12px;
+		text-decoration: none;
+		text-transform: uppercase;
+		display: block;
+		color: #ffffff;
+		padding: 15px 30px;
+		background: url('../images/fleche.png') no-repeat 10% 50%;
+		font-family: 'ProximaNovaRegular',verdana, arial, sans-serif;
+		transition: 0.2s;
+	}
+	a:hover {
+		background: url('../images/fleche.png') no-repeat 13% 50%;
+		transition: 0.2s;
+	}
+}

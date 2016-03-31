@@ -2,7 +2,7 @@
 
 @section('content')
    @include('admin.picture.error-notification')
-<section class="section-liste-mariages">
+<section class="section-liste-mariages2">
    <div class="section-mariage-container">
    <form enctype="multipart/form-data" class="create-picture-formulaire" action="{{url('picture/'.$picture->id)}}" method="post">
    {{method_field('PUT')}}

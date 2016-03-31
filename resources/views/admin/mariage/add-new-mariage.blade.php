@@ -6,7 +6,7 @@
 
 	<form class="mariageCreationFormulaire " enctype="multipart/form-data" action="{{url('/mariage')}}" method="POST">
 	{{csrf_field()}}
-		<h1 class="titleCreationMariage">Édit<h1>
+		<h1 class="titleCreationMariage">Éditer<h1>
 
 		<div class="inputContainer">
 			<input type="text" class="mariageChamps" name="name" placeholder="Nom des maries*">

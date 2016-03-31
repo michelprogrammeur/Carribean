@@ -26,6 +26,7 @@ Route::group(['middleware' => ['web']], function () {
 	Route::get('/', 'FrontController@index');
     Route::get('contact', 'FrontController@showContact');
     Route::get('contact-formulaire', 'FrontController@contactFormulaire');
+    Route::get('guadeloupe', 'FrontController@pageGuadeloupe');
     Route::post('send', 'FrontController@sendContact');
 	Route::any('login', 'LoginController@login'); // get et post
 	Route::get('logout', 'LoginController@logout'); // get et post
