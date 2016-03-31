@@ -1,9 +1,5 @@
 @extends('layouts.master')
 
-
-
-
-
 @section('content')
 	<form class="contactFormulaire" name="form" action="{{url('send')}}" method="post" >
 		{{csrf_field()}}

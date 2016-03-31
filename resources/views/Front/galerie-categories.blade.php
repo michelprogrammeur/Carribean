@@ -2,19 +2,21 @@
 
 @section('content')
 
-	<div class="container-galerie">
-		<ul>
-		@foreach($categories as $category)
-			<a href="{{ url('category', $category->id)}}">
-				<li class="category{{$category->id}}">
-					<div class="container-category">
+	<section class="container-galerie">
+		<div>
+			<ul>
+			@foreach($categories as $category)
+				<a href="{{ url('category', $category->id)}}">
+					<li class="category{{$category->id}}">
 						<p>{{$category->title}}</p>
-						<img src="{{ asset($category->file) }}">
-					</div>
-				</li>
-			</a>
-		@endforeach
-		</ul>
-	</div>
+						<div class="container-category">
+							<img src="{{ asset($category->file) }}">
+						</div>
+					</li>
+				</a>
+			@endforeach
+			</ul>
+		</div>
+	</section>
 
 @stop

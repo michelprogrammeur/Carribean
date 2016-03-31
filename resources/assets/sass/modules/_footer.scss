@@ -10,6 +10,9 @@
 	}
 	.footer-middle {
 		text-align: center;
+		.logo-footer {
+			width: 77px;
+		}
 	}
 	.footer-left {
 		p, a {
@@ -20,10 +23,10 @@
 			font-family: 'ProximaNovaRegular',verdana, arial, sans-serif;
 		}
 		.copyright {
-			padding: 30px 20px 30px 58px;
+			padding: 30px 2% 30px 10%;
 		}
 		.mentions-legales {
-			padding: 30px 20px;
+			padding: 30px 0 30px 2%;
 			text-decoration: underline;
 		}
 	}
@@ -42,6 +45,10 @@
 				li {
 					display: inline-block;
 					padding: 10px 9px;
+					img {
+						width: 18px;
+						margin-top: 5px;
+					}
 				}
 			}
 		}

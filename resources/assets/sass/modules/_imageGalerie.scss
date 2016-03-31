@@ -1,0 +1,49 @@
+.section-images-galerie {
+	width: 100%;
+	padding: 0 50px;
+	background: url('../images/motif.png') repeat 0 0;
+}
+.section-images-galerie-container {
+	background: #ffffff;
+	width: 100%;
+	padding: 50px 75px;
+}
+.section-images-galerie-container ul {
+	width: 100%;
+	display: block;
+	text-align: center;
+	li {
+		display: inline-block;
+		box-sizing: border-box;
+		padding: 25px;
+		width: 350px;
+		height: 350px;
+		position: relative;
+		img {
+			height: 100%;
+			width: 100%;
+			display: block;
+			transition: 0.3s;
+		}
+	}
+	li:hover  img{
+		opacity: 0.8;
+		transition: 0.3s;
+	}
+	.plus {
+		opacity: 0;
+		transform: translateX(-50%) translateY(-50%);
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		font-size: 60px;
+		transition: 0.3s;
+		color: #dce7fc;
+	}
+	li:hover .plus {
+		color: #dce7fc;
+		opacity: 1;
+		transition: 0.3s
+	}
+
+}

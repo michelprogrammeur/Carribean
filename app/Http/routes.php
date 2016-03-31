@@ -25,6 +25,7 @@
 Route::group(['middleware' => ['web']], function () {
 	Route::get('/', 'FrontController@index');
     Route::get('contact', 'FrontController@showContact');
+    Route::get('contact-formulaire', 'FrontController@contactFormulaire');
     Route::post('send', 'FrontController@sendContact');
 	Route::any('login', 'LoginController@login'); // get et post
 	Route::get('logout', 'LoginController@logout'); // get et post
@@ -36,6 +37,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('formules-mariages', 'FrontController@formulesMariages');
     Route::get('formules-evenements-prives', 'FrontController@formulesEvenementsPrives');
     Route::get('conciergerie', 'FrontController@conciergerie');
+    Route::get('ceremonie', 'FrontController@ceremonie');
     Route::any('category/{id}', 'FrontController@showPicturesByCategory');
     
 	

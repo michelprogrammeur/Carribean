@@ -1,0 +1,40 @@
+.section-prestation {
+  width: 100%;
+  text-align: center;
+  //padding: 150px 50px  50px  50px ;
+  background: url('../images/motif.png')  repeat 0 0;
+  .prestations-container {
+    background-color: white;
+      figure {
+        display: inline-block;
+        color: #cd4662;
+        margin-right: 211px;
+        transition:  all 0.5s;
+        cursor: pointer;
+
+        img {
+          min-height: 229px;
+          max-height: 229px;
+          opacity: 1;
+          transition: all  0.5s ;
+
+        }
+
+
+
+        figcaption {
+          font-size: 30px;
+          font-family: 'CinzelRegular_0',verdana, arial, sans-serif;
+        }
+      }
+
+    figure:hover {
+      transform: scale(1.25);
+      opacity: 0.5;
+
+    }
+
+      }
+
+
+  }

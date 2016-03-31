@@ -6,13 +6,16 @@
 			<ul>
 				<li class="agence-paris">
 					<div class="agence-container--paris">
-						<h2>bsdbsdb</h2>
-						<p>bfdb</p>
+						<h2>Agence de paris</h2>
+						<p>2 rue  Victor  Hugo  94130  Nogent-sur-Mame <br>
+							+336 67 52 73 88 <br>
+							contact@caribbean-planner.com
+						</p>
 					</div>
 				</li><li class="agence-guadeloupe">
 					<div class="agence-container--guadeloupe">
-						<h2>bdbbfdbfqdb</h2>
-						<p>bfb</p>
+						<h2>Agence de guadeloupe</h2>
+						<p>Immeuble  Socogar  ZI jamy  97122 Baie-Manault <br>  +336 90 72 86 86 <br> contact@caribbean-planner.com </p>
 					</div>
 				</li>
 			</ul>

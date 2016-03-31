@@ -10,7 +10,7 @@
 	color: #6b6b6e;
 	line-height: 30px;
 	span {
-		color: #c92f51;
+		color: #e92b51;
 	}
 }
 .section-citation {
@@ -19,7 +19,7 @@
 	padding: 50px 60px 100px 60px;
 	font-size: 30px;
 	font-family: 'Demo_ConeriaScript',verdana, arial, sans-serif;
-	color: #c92f51;
+	color: #e92b51;
 	display: inline-block;
 	text-align: center;
 }
@@ -30,9 +30,22 @@
 	height: 640px;
 }
 .image1 {
-	background:url('../images/plage2.jpg') no-repeat 50% 50%;
+	background:url('../images/slider-home.jpg') no-repeat 50% 50%;
 	background-size: cover;
 }
+.image2 {
+	background:url('../images/slider-home1.jpg') no-repeat 50% 50%;
+	background-size: cover;
+}
+.image3 {
+	background:url('../images/slider-home2.jpg') no-repeat 50% 50%;
+	background-size: cover;
+}
+.image4 {
+	background:url('../images/slider-home3.jpg') no-repeat 50% 50%;
+	background-size: cover;
+}
+
 .slider {
 	text-align: center;
 }
@@ -62,6 +75,14 @@
 			text-align: center;
 			vertical-align: top;
 			box-sizing: border-box;
+			.titre-pictos {
+		    	font-size: 16px;
+				text-transform: uppercase;
+				padding: 14px 0 14px 0; 
+				color: #ea2b51;
+				background: url('../images/fleche.png') no-repeat 10% 50%;
+				font-family: 'ProximaNovaRegular',verdana, arial, sans-serif;
+		    }
 			a {
 				img {
 					margin-bottom: 5px;
@@ -192,7 +213,7 @@
 	.formules-container {
 		display: inline-block;
 		box-sizing: border-box;
-		width: 384px;
+		width: 32%;
 		vertical-align: top;
 	}
 
@@ -287,6 +308,7 @@
 	padding: 46px 0 100px 0;
 	margin: 0 0 150px 0;
 	background:url('../images/motif.png') repeat 0 0;
+	clear: both;
 }
 .creation-titles {
 	text-align: center;
@@ -294,6 +316,65 @@
 .creation .section-citation {
 	background: url('../images/guillemet-gauche.png') no-repeat 2.4% 16%,
 				url('../images/guillemet-droite.png') no-repeat 87% 57%;
+}
+.slider-nav {
+	width: 100%;
+	text-align: center;
+	.formules {
+	}
+	.form-1 {
+		position: relative;
+		width: 98%;
+		height: 550px;
+		background: url('../images/creation-1.jpg') no-repeat 50% 50%;
+		background-size: cover;
+		margin: 0 auto;
+	}
+	.form-2 {
+		position: relative;
+		width: 98%;
+		height: 550px;
+		background: url('../images/slider-crea1.jpg') no-repeat 50% 50%;
+		background-size: cover;
+		margin: 0 auto;
+	}
+	.form-3 {
+		position: relative;
+		width: 98%;
+		height: 550px;
+		background: url('../images/slider-crea2.jpg') no-repeat 50% 50%;
+		background-size: cover;
+		margin: 0 auto;
+	}
+	.title-creation {
+		font-size: 12px;
+		font-family: 'ProximaNovaRegular',verdana, arial, sans-serif;
+		font-weight: 100;
+		color: #bebebe;
+		text-transform: uppercase;
+		padding: 5px 0 10px 0;
+	}
+	.container-creation {
+		position: relative;
+		margin: -50px 0 0 0;
+		z-index: 999999;
+		background-color: #ffffff;
+		padding: 25px 75px;
+		display: inline-block;
+		border: 3px solid #d8e8fd;
+		span {
+			color: #c92f51;
+			font-size: 16px;
+			font-family: 'K22Didoni', verdana, arial, sans-serif;
+		}
+	}
+	.name-client {
+		font-size: 18px;
+		text-transform: uppercase;
+		display: block;
+		color: #6b6b6e;
+		font-family: 'ProximaNovaRegular',verdana, arial, sans-serif;
+	}
 }
 
 
@@ -457,3 +538,251 @@
 	z-index: 999;
 }
 
+.menu-site {
+	display: block;
+}
+.responsive-menu {
+	display: none;
+}
+
+
+@media screen and (max-width: 1024px) {
+	.menu-site {
+		display: none;
+	}
+	.responsive-menu {
+		display: block;
+		width: 100%;
+		height: 100px;
+		text-align: center;
+		background: url('../images/motif.png') repeat 0 0;
+	}
+	.bar-menu {
+		position: relative;
+		width: 100%;
+		height: 100px;
+		p {
+			position: absolute;
+			left: 50px;
+	    	top: 40px;
+			z-index: 2000;
+			box-sizing: border-box;
+		}
+		img {
+			padding: 20px 0 0 0;
+	    	width: 100px;
+			display: block;
+			margin: 0 auto;
+		}
+	}
+	#dl-menu.reseaux {
+		width: 100%;
+		display: block;
+	}
+	#dl-menu.picto-reseaux {
+		display: inline-block;
+		padding: 0;
+	}
+	.picto-reseaux {
+		text-align: center;
+		width: 50px !important;
+		height: 50px;
+		padding: 0 !important;
+		margin: 0 20px !important;
+		display: inline-block;
+		a {
+			padding: 0 !important;
+			display: inline-block;
+		}
+	}
+	.btnEventResposive {
+		margin: 0 auto;
+		width: 200px;
+		height: 57px;
+		display: block;
+		text-align: center;
+		background: url('../images/evenement.png') repeat 0 0;
+		background-size: cover;
+		a {
+			font-size: 12px !important;
+			text-decoration: none;
+			text-transform: uppercase;
+			padding: 18px 14px 14px 20px !important; 
+			display: block;
+			color: #ffffff !important;
+			background: url('../images/fleche.png') no-repeat 14% 50%;
+			font-family: 'ProximaNovaRegular',verdana, arial, sans-serif;
+			transition: 0.2s;
+		}
+		a:hover {
+			background: url('../images/fleche.png') no-repeat 16% 50%;
+			transition: 0.2s;
+		}
+	}
+	.pictos ul li {
+	    padding: 0 40px;
+	}
+	
+
+	.formules .formules-container {
+	    display: inline-block;
+	    box-sizing: border-box;
+	    width: 100%;
+	    padding: 25px 50px;
+	    vertical-align: top;
+	}
+	.ceremonie {
+		padding: 0px;
+	}
+	.formules .reception {
+	    padding: 25px 50px;
+	    margin: 0 0 0 0;
+	}
+	.conciergerie {
+		padding: 0px;
+	}
+	.agence-img {
+	    width: 100%;
+	    background-size: cover;
+	    box-sizing: border-box;
+		padding: 800px 50px 0;
+	    margin: 0 0 320px 0;
+	}
+	.agence-container--text {
+		background: url('../images/motif-anneaux.png') no-repeat 50% 80%,
+					#ffffff;
+	    width: 100%;
+	    border: 2px solid #eaeffe;
+	    height: none;
+	    margin-left: 0px;
+	    clear: both;
+	    height: auto;
+	    padding: 0 0 50px 0;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.section-title {
+		letter-spacing: 3px;
+		font-size: 30px;
+		font-family: 'CinzelRegular_0',verdana, arial, sans-serif;
+		color: #6b6b6e;
+		line-height: 30px;
+		padding: 50px 0;
+		span {
+			color: #c92f51;
+		}
+
+	}
+	.section-citation {
+		background: url('../images/guillemet-gauche.png') no-repeat 50% 0%,
+					url('../images/guillemet-droite.png') no-repeat 50% 70%;
+		background-size: 6%;
+		padding: 50px 60px 150px 60px;
+		font-size: 40px;
+		line-height: 60px;
+		width: 80%;
+		color: #c92f51;
+		display: inline-block;
+		text-align: center;
+	}
+	.prestations .section-citation {
+	    background: url('../images/guillemet-gauche.png') no-repeat 50% 0%,
+	    			url('../images/guillemet-droite.png') no-repeat 50% 78%;
+		background-size: 6%;
+		
+	}
+	.creation .section-citation {
+	    background: url('../images/guillemet-gauche.png') no-repeat 50% 0%,
+	    			url('../images/guillemet-droite.png') no-repeat 50% 75%;
+	}
+	.saut-ligne {
+	    display: block;
+	    line-height: 60px;
+	}
+
+	.pictos {
+	    padding: 80px 20px 40px 20px;
+	}
+	.pictos ul li {
+		width: 100%;
+	    padding: 50px 40px;
+	}
+	.quota ul {
+	    padding: 50px 0 50px 0;
+	}
+	.quota li {
+	    width: 100%;
+	    padding: 25px 0;
+	    box-sizing: border-box;
+	}
+	.avis-container {
+	    width: 82%;
+    	background: url('../images/trait-responsive-avis.png')no-repeat 50% 39%,
+			    	url('../images/trait-responsive-avis.png')no-repeat 50% 87%,
+			    	url('../images/guillemet-responsive-avis-h.png')no-repeat 9% 38%, 
+			    	url('../images/guillemet-responsive-avis-b.png')no-repeat 91% 90%,
+			    	#fff;
+	}
+	.avis-container { 
+	}
+	.avis-lieu {
+	    padding: 10px 5px 70px 5px;
+	}
+	.agence-img {
+	    background: url('../images/christina.jpg') 40% 50% no-repeat;
+	}
+	.flux .suivre {
+	    padding: 10px 0 40px 0;
+	}
+	#footer {
+		padding: 75px 0 0 0;
+	}
+	#footer .footer-left, #footer .footer-middle, #footer .footer-right {
+	    width: 100% !important;
+	}
+	#footer .footer-left {
+		p, a {
+			display: block;
+			width: 100%;
+			padding: 20px 0 !important;
+			text-align: center;
+			font-size: 22px !important;
+		}
+	}
+	#footer .footer-middle .logo-footer {
+		width: 30% !important;
+		padding: 75px 0;
+
+	}
+
+	.reseaux-sociaux {
+    	width: 100% !important;
+    	text-align: center;
+	}
+	#footer .footer-right .partenaires {
+	    width: 100% !important;
+	    text-align: center;
+	    padding: 20px 0 !important;
+	}
+	.flux-instagram ul li{
+		width: 33.3333% !important;
+		vertical-align: bottom;
+		img {
+			width: 100%;
+			display: block;
+		}
+	}
+}	
+
+@media screen and (max-width: 540px) {
+	.avis-container {
+	    width: 82%;
+	    background: url('../images/guillemet-responsive-avis-h.png') 50% 24% no-repeat,
+				    url('../images/guillemet-responsive-avis-b.png') 50% 94% no-repeat,
+				    #fff;
+	}
+	.avis-text {
+		border-top: 1px solid #c92f51 !important;
+	}
+}

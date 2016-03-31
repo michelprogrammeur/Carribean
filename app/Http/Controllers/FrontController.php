@@ -114,6 +114,15 @@ class FrontController extends Controller
 
         return view('front.mentions-legales');
     }
+    public function contactFormulaire(){
+
+        return view('front.contact-formulaire');
+    }
     
+    
+    public function ceremonie(){
+
+        return view('front.ceremonie');
+    }
     
 }

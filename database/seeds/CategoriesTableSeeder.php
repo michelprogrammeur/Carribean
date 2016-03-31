@@ -13,23 +13,23 @@ class CategoriesTableSeeder extends Seeder
     {
         DB::table('categories')->insert([
         	[
-                'title' => 'Diner sur la plage',
-	            'file' => 'catImages/abstract.jpg',  
+                'title' => 'Mariage en bord de mer',
+	            'file' => 'catImages/categories-1.jpg',  
 	            'uri' => 'abstract.jpg',
         	],
         	[
-                'title' => 'Decoration de plage',
-	            'file' => 'catImages/food.jpg', 
+                'title' => 'Réceptions dans les cadres idylliques',
+	            'file' => 'catImages/categories-2.jpg', 
 	            'uri' => 'food.jpeg',
         	],
         	[
-                'title' => 'Animations',
-	            'file' => 'catImages/bridge.jpg',
+                'title' => 'Activités organisées par notre service conciergerie',
+	            'file' => 'catImages/categories-3.jpg',
 	            'uri' => 'bridge.jpg',
         	],
         	[
-                'title' => 'Mariage en journée sur la plage',
-	            'file' => 'catImages/fashion.jpg',
+                'title' => 'Photos de couple',
+	            'file' => 'catImages/categories-4.jpg',
 	            'uri' => 'fashion.jpg',
         	]
         ]);

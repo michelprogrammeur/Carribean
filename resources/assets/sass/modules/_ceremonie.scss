@@ -1,0 +1,121 @@
+.section-head-ceremonie {
+	width: 100%;
+}
+.ceremonie-container {
+	width: 100%;
+	padding: 0 0 200px 0;
+	img {
+		width: 100%;
+	}
+}
+.formule-container-img {
+	position: relative;
+	width: 100%;
+	height: 1000px;
+}
+.mg-formule-1, .mg-formule-3 {
+	position:absolute; 
+	top: 0;
+	left: 0;
+}
+.mg-formule-2, .mg-formule-4 {
+	position:absolute; 
+	bottom: 0;
+	right: 0;
+}
+.accroche-ceremonie {
+	position: absolute;
+	z-index: 100;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 80px;
+	margin: -74px 0 0 0;
+	display: inline-block;
+	background-color: #ffffff;
+	color: #c92f51;
+	font-size: 36px;
+	padding: 20px 195px 20px 195px;
+	line-height: 4rem;
+	border: 2px solid #eaeffe;
+	font-family: "Demo_ConeriaScript", verdana, arial, sans-serif;
+}
+.formules-ceremonie {
+	width: 100%;
+	text-align: center;
+	line-height: 44px;
+	padding: 50px 60px 60px 60px;
+} 
+.title-ceremonie {
+	display: block;
+}
+.formule-container {
+	padding: 100px 50px;
+	position: relative;
+}
+
+.formule-container-text {
+	position: absolute;
+	left: 50%;
+	top: 140px;
+	transform: translateX(-50%);
+	background: url('../images/motif-anneaux.png') no-repeat 50% 96%;
+	padding: 50px 50px 100px 50px;
+	box-sizing: border-box;
+	width: 700px;
+	background-color: #ffffff;
+	text-align: left;
+	margin: 0 auto;
+	border: 3px solid #dce7fc;
+}
+.formule-ceremonie-title {
+	text-align: center;
+	font-size: 18px;
+	color: #c92f51;
+	font-weight: 100;
+	font-family: 'ProximaNovaRegular',verdana, arial, sans-serif;
+}
+.formule-ceremonie-name {
+	text-align: center;
+	color: #bdbdbd;
+	font-size: 12px;
+	line-height: 14px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 0 0 60px 0;
+}
+.formule-container-text li{
+	padding: 0 0 0 50px;
+	width: 100%;
+	display: inline-block;
+	background: url('../images/anneaux-rose.png') no-repeat 0 50%;
+	line-height: 24px;
+
+}
+.btn-container-ceremonie {
+	padding: 40px 0 0 0;
+	width: 100%;
+	text-align: center;
+}
+.btnFormule-1 {	
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+	width: 143px;
+	height: 41px;
+	background: url('../images/evenement.png') repeat 0 0;
+	a {
+		font-size: 12px;
+		text-decoration: none;
+		text-transform: uppercase;
+		display: block;
+		color: #ffffff;
+		padding: 0px 30px;
+		background: url('../images/fleche.png') no-repeat 10% 50%;
+		font-family: 'ProximaNovaRegular',verdana, arial, sans-serif;
+		transition: 0.2s;
+	}
+	a:hover {
+		background: url('../images/fleche.png') no-repeat 13% 50%;
+		transition: 0.2s;
+	}
+}

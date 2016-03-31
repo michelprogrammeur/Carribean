@@ -8,6 +8,7 @@
 	            <div class="swiper-slide image1"></div>
 	            <div class="swiper-slide image2"></div>
 	            <div class="swiper-slide image3"></div>
+	            <div class="swiper-slide image4"></div>
 	        </div>
 
 	         <p class="accroche">Vivez une aventure inoubliable</p>
@@ -19,15 +20,15 @@
 			<ul>
 				<li>
 					<img src="../assets/images/ceremonie-2.png">
-					<p>Cérémonie</p>
+					<p class="titre-pictos">Cérémonie</p>
 				</li>
 				<li>
 					<img src="../assets/images/reception-2.png">
-					<p>Organisation complète</p>
+					<p class="titre-pictos">Réception</p>
 				</li>
 				<li>
 					<img src="../assets/images/conciergerie-2.png">
-					<p>Conciergerie</p>
+					<p class="titre-pictos">Conciergerie</p>
 				</li>
 			</ul>
 		</div>
@@ -66,7 +67,6 @@
 			</ul>
 		</div>
 	</section>
-
 
 	<section class="prestations">
 		<div class="prestation-titles">
@@ -163,30 +163,38 @@
 		</div>
 
 		<!-- slider hover -->
-		<div class="slider-hover">
-			<div class="landing-wrapper">
-				<div class="landing-inner-content">
-				    <div class="box box-1">
-				      <div class="box-content">
-				      </div>
-				    </div>
-
-				    <div class="box box-2">
-				      <div class="box-content">
-				      </div>
-				    </div>
-
-				    <div class="box box-3">
-				      <div class="box-content">
-				      </div>
-				    </div>
-
+		<div>
+		<div class="slider-nav">
+			<div class="formules">
+				<div class="form-1">
+				</div>
+				<div class="container-creation">
+					<p class="name-client">Laure & Christophe</p>
+					<p class="title-creation">cérémonie sur la plage</p>
+					<span>799,00€</span>
+				</div>
+			</div>
+			<div class="formules">
+				<div class="form-2">
+				</div>
+				<div class="container-creation">
+					<p class="name-client">Laure & Christophe</p>
+					<p class="title-creation">cérémonie sur la plage</p>
+					<span>599,00€</span>
+				</div>
+			</div>
+			<div class="formules">
+				<div class="form-3">
+				</div>
+				<div class="container-creation">
+					<p class="name-client">Laure & Christophe</p>
+					<p class="title-creation">cérémonie sur la plage</p>
+					<span>1499,00€</span>
 				</div>
 			</div>
 		</div>
-
+		</div>
 	</section>
-
 
 	<section class="avis">
 		<div class="avis-titles">
@@ -200,23 +208,21 @@
 			<div class="owl-carousel owl-theme">
 				<div>
 					<img src="../assets/images/maries.png">
-					<p class="avis-lieu">Torento - <span>03/01/2014</span></p>
-					<p class="avis-text">Thank you very much for everything, you made our ceremony to a fantastic memory ! 
-					We wish you all the best in the future with your wedding-company and everything else ! 
-					We would gladly recommend you !</p>
-					<p class="remerciment">Yours sincerely, <span>Gustaf & Linda</span></p>
+					<p class="avis-lieu">PARIS - <span>03/01/2014</span></p>
+					<p class="avis-text">Déja plus d'un mois,est passé, et il ne se passe pas une journée sans que j'y pense avec beaucoup de nostalgie... Bravo et Merci à Christina de nous avoir aidé à organiser le mariage de nos rêves !</p>
+					<p class="remerciment">A Bientôt, <span>Corine & Mohamed</span></p>
 				</div>
 				<div>
-					<img src="../assets/images/maries.png">
-					<p class="avis-lieu">Torento - <span>03/01/2014</span></p>
-					<p class="avis-text">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla!</p>
-					<p class="remerciment">Yours sincerely, <span>Gustaf & Linda</span></p>
-				</div>
-				<div>
-					<img src="../assets/images/maries.png">
-					<p class="avis-lieu">Torento - <span>03/01/2014</span></p>
+					<img src="../assets/images/avis-img1.png">
+					<p class="avis-lieu">Torento - <span>12/04/2013</span></p>
 					<p class="avis-text">Thank you very much for everything, you made our ceremony to a fantastic memory ! We wish you all the best in the future with your wedding-company and everything else ! We would gladly recommend you !</p>
-					<p class="remerciment">Yours sincerely, <span>Gustaf & Linda</span></p>
+					<p class="remerciment">Yours sincerely, <span>Julie & Tony</span></p>
+				</div>
+				<div>
+					<img src="../assets/images/avis-img2.png">
+					<p class="avis-lieu">Sydney - <span>20/09/2010</span></p>
+					<p class="avis-text">C’était le 12 novembre 2011 et tout le monde en parle encore de notre mariage sur la plage... Une journée inoubliable, un vrai rêve , un pur bonheur. Encore merci a toi Christina pour ta disponibilité, ton efficacité , ton imagination débordante , tu est très professionnelle.</p>
+					<p class="remerciment">Bonne continuation, <span>Betty & Robert</span></p>
 				</div>
 			</div>
 		</div>

@@ -5,15 +5,15 @@
 	</li><!--
 
  --><li class="footer-middle">
-	<img class="logo-footer" src="../assets/images/logo-footer.png">
+	<img class="logo-footer" src="../assets/images/logo-responsive-footer.png">
 	</li><!--
 
  --><li class="footer-right">
 		<div class="reseaux-sociaux">
 			<ul>
-				<li><a href=""><img src="../assets/images/facebook-footer.png"></a></li>
-				<li><a href=""><img src="../assets/images/instagram-footer.png"></a></li>
-				<li><a href=""><img src="../assets/images/pinterest-footer.png"></a></li>
+				<li><a href=""><img src="../assets/images/facebook-responsive-footer.png"></a></li>
+				<li><a href=""><img src="../assets/images/insta-responsive-footer.png"></a></li>
+				<li><a href=""><img src="../assets/images/pinterest-responsive-footer.png"></a></li>
 			</ul>
 		</div><div class="partenaires">
 			<img src="../assets/images/partenaire.png">

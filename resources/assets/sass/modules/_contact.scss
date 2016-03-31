@@ -5,7 +5,7 @@
 	background: url('../images/motif.png') repeat 0 0;
 }
 .contact-container  {
-	padding: 100px;
+	padding: 131px;
 	width: 100%;
 	box-sizing: border-box;
 	background-color: #ffffff;
@@ -16,15 +16,16 @@
 			color: #c92f51;
 			font-family: 'ProximaNovaRegular',verdana, arial, sans-serif;
 			padding: 16px 30px;
-			background-color: rgba(255,255,255,0.6);
-			border: 2px solid #ffffff;
+			background-color: white;
+			border: 2px solid #d8e8fd;
 			h2 {
 				padding: 0 0 10px 0;
 			}
 		}
 		.agence-paris {
 			position: relative;
-			background: url('../images/plage.jpg') repeat 0 0;
+			background-image: url('../images/paris.png');
+			background-size : cover;
 			height: 400px;
 			text-align: center;
 			margin-right: 2%;
@@ -32,24 +33,43 @@
 			width: 48%;
 			.agence-container--paris {
 				left: 50%;
-				top: 50%;
+				top: 94%;
 				position: absolute;
 				transform: translateX(-50%) translateY(-50%);
+
+				h2{
+					font-size: 14.53px;
+					font-family: 'ProximaNovaLight',verdana, arial, sans-serif;
+				}
+				p{
+					font-size: 14.53px;
+					font-family: 'ProximaNovaLight',verdana, arial, sans-serif;
+				}
 			}
 		}
 		.agence-guadeloupe {
 			position: relative;
-			background: url('../images/plage.jpg') repeat 0 0;
+			background-image: url('../images/guadeloupe.png') ;
+			background-size: cover;
 			text-align: center;
 			margin-left: 1%;
 			display: inline-block;
-			width: 49%;
+			width: 48%;
 			height: 400px;
 			.agence-container--guadeloupe {
 				left: 50%;
-				top: 50%;
+				top: 94%;
 				position: absolute;
 				transform: translateX(-50%) translateY(-50%);
+
+				h2{
+					font-size: 14.53px;
+					font-family: 'ProximaNovaLight',verdana, arial, sans-serif;
+				}
+				p{
+					font-size: 14.53px;
+					font-family: 'ProximaNovaLight',verdana, arial, sans-serif;
+				}
 			}
 		}
 	}
